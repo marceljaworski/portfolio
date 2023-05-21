@@ -1,8 +1,8 @@
-# blank-vite-dark-menu
+# portfolio - page under construction
 
-This is a minimal React site created with Vite with an implemented React Router menu.
+This is a minimal React site created with Vite with an implemented React Router menu. 
 
-![grafik](https://user-images.githubusercontent.com/446574/200960596-bdc5bd34-ca8c-4c03-9c0f-e67e9bf7d111.png)
+<!-- ![grafik](https://user-images.githubusercontent.com/446574/200960596-bdc5bd34-ca8c-4c03-9c0f-e67e9bf7d111.png) -->
 
 ## includes:
 
