@@ -1,7 +1,7 @@
 import './App.scss';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { PageWelcome } from './pages/PageWelcome';
-import { PageInfo } from './pages/PageInfo';
+import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
 
 function App() {
@@ -9,14 +9,14 @@ function App() {
 		<div className="App">
 			<h1>Marcel Jaworski</h1>
 			<nav>
-				<NavLink to="/welcome">Welcome</NavLink>
-				<NavLink to="/info">Info</NavLink>
-				<NavLink to="/about">About</NavLink>
+				<NavLink to="/welcome">Willkommen</NavLink>
+				<NavLink to="/projects">Projekte</NavLink>
+				<NavLink to="/about">über mich</NavLink>
 			</nav>
 
 			<Routes>
 				<Route path="/welcome" element={<PageWelcome />} />
-				<Route path="/info" element={<PageInfo />} />
+				<Route path="/projects" element={<PageProjects />} />
 				<Route path="/about" element={<PageAbout />} />
 				<Route path="/" element={<Navigate to="/welcome" replace />} />
 			</Routes>
