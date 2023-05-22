@@ -7,7 +7,7 @@ export const PageAbout = () => {
 				<img src={avatar} alt="Avatar" className="avatar"></img>
 				{data.pageAbout.paragraph.map((el, i) => {
 					return (
-						<p>{el}</p>
+						<p key={i}>{el}</p>
 					)
 				})}
 			</div>

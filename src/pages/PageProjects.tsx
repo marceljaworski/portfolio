@@ -1,7 +1,9 @@
+import data from "../content/data.json";
+
 export const PageProjects = () => {
 	return (
 		<>
-			<p>Hier finden Sie Links zu Beispielen meiner Praxis und Arbeit als Webentwickler</p>
+			<p>{data.pageProjects.paragraph}</p>
 			<ul>
 				<li><a href="https://event.ella-rotari.com/" target="blank">Event Planner</a></li>
 				<li><a href="https://chat-gpt-clone-mj6c.onrender.com/" target="blank">ChatGPT clone</a></li>
