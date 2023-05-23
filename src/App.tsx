@@ -3,7 +3,7 @@ import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { PageWelcome } from './pages/PageWelcome';
 import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
-import data from './content/data.json'
+import data from './content/data.json';
 
 function App() {
 	return (
@@ -19,7 +19,7 @@ function App() {
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="/projects" element={<PageProjects />} />
 				<Route path="/about" element={<PageAbout />} />
-				<Route path="/" element={<Navigate to="/welcome" replace />} />
+				<Route path="/" element={<Navigate to="/about" replace />} />
 			</Routes>
 		</div>
 	);
