@@ -16,10 +16,10 @@ function App() {
 			</nav>
 
 			<Routes>
+				<Route path="/" element={<Navigate to="/about" replace />} />
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="/projects" element={<PageProjects />} />
 				<Route path="/about" element={<PageAbout />} />
-				<Route path="/" element={<Navigate to="/about" replace />} />
 			</Routes>
 		</div>
 	);
