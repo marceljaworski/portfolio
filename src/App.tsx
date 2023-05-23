@@ -3,6 +3,7 @@ import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { PageWelcome } from './pages/PageWelcome';
 import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
+import { Page404 } from './pages/Page404';
 import data from './content/data.json';
 
 function App() {
@@ -16,10 +17,12 @@ function App() {
 			</nav>
 
 			<Routes>
-				<Route path="/" element={<Navigate to="/about" replace />} />
+				<Route path="/about" element={<PageAbout />} />
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="/projects" element={<PageProjects />} />
-				<Route path="/about" element={<PageAbout />} />
+				<Route path="/" element={<Navigate to="/about" replace />} />
+				<Route path="*" element={ <Page404 /> } />
+
 			</Routes>
 		</div>
 	);
