@@ -51,6 +51,10 @@ body {
 		margin-top: .5rem;
 		padding: .5rem;
 		// color: #aaa;
+		p {
+			max-width: 700px;
+			color: #aaa;
+		}
 		.headerAbout {
 			display: flex;
 			  justify-content: space-between;
@@ -116,10 +120,7 @@ body {
 		padding-bottom: .5rem;
 	}
 
-	p {
-		max-width: 700px;
-		color: #aaa;
-	}
+	
 	@media only screen and (min-width: 480px) {
 		h1, h2, h3, a, p {
 			line-height: 1.2em;

@@ -1,0 +1,124 @@
+
+.main-programer__text-container{
+    padding: 1rem;
+    
+    line-height: 1.5em;
+    background: linear-gradient(145deg, #262626, #404040);
+    box-shadow:  20px 20px 60px #2b2b2b,
+             -20px -20px 60px #3a3a3a;
+}
+.main-programer__text-container--escaped{
+    padding-left: 0.5rem;
+    line-height: 1.5em;
+    overflow: hidden;
+    background: linear-gradient(145deg, #222,  #262626);
+    box-shadow:  2px 2px 6px #2b2b2b,
+             -2px -2px 6px #3a3a3a;
+}
+.main-programer__title{
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    color: $secundary;
+}
+.main-programer__text{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+.main-programer__text--escaped{
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    color: $secundary;
+}
+.programer-icon__main-container{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.programer-icon__container{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(145deg, #262626, #404040);
+    box-shadow:  20px 20px 60px #2b2b2b,
+             -20px -20px 60px #3a3a3a;
+    i{
+        font-size: 6rem;
+        margin: 1rem;
+        color: $secundary;
+    }
+}
+@media screen and (max-width: 768px) { 
+    .main-programer{
+        justify-content: flex-start;
+        
+    }
+    .programer-icon__container{
+        width: 4rem;
+        height: 3.5rem;
+        i{  
+            font-size: 2.5rem;
+            margin: 0.5rem;
+            color: $secundary;
+        }
+    }
+    .main-programer__text-container{
+        font-size: 0.8rem;
+    }
+    .main-programer__text--escaped{
+        font-size: 0.8rem;
+        
+    }
+    
+}
+.element{
+    color: $red;
+}
+.class{
+    color: $class;
+}
+.wert{
+    color: $wert;
+}
+.commentar{
+    color: $green;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+    gap: .3rem;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 300ms;
+}
+.logo:nth-child(3) {
+    transition-delay: 600ms;
+}
+.logo:nth-child(4) {
+    transition-delay: 900ms;
+}
+.logo:nth-child(5) {
+    transition-delay: 1200ms;
+}
