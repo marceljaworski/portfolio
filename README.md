@@ -6,11 +6,13 @@ This is a minimal React site created with Vite with an implemented React Router 
 
 ## includes:
 
+- built with **Vite**
+- **React Router** menu
 - TypeScript
 - Sass
-- React Router (v6) 
-- only one Sass file (`App.scss`) - the file `index.css` was deleted
-- CLI with page component creator: `npm run cp`
+- **useContext**
+- **CLI** to easily create pages (`npm run cp Info` creates info page)
+- this site has **React Router 404 bug fixes** implemented for both Netlify (`public/_redirects` file) and Vercel (`vercel.json` file)
 - page-load flicker bug fixed in index.html:
 ```
   <style>
