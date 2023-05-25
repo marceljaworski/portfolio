@@ -9,13 +9,13 @@ import data from './content/data.json';
 function App() {
 	return (
 		<div className="App">
-			<h1>Marcel Jaworski</h1>
-			<nav>
-				<NavLink to="/welcome">{data.navText[0]}</NavLink>
-				<NavLink to="/projects">{data.navText[1]}</NavLink>
-				<NavLink to="/about">{data.navText[2]}</NavLink>
-			</nav>
 			<BrowserRouter>
+				<h1>Marcel Jaworski</h1>
+				<nav>
+					<NavLink to="/welcome">{data.navText[0]}</NavLink>
+					<NavLink to="/projects">{data.navText[1]}</NavLink>
+					<NavLink to="/about">{data.navText[2]}</NavLink>
+				</nav>
 				<Routes>
 					<Route path="/" element={<PageAbout />} />
 					<Route path="/welcome" element={<PageWelcome />} />
