@@ -2,7 +2,7 @@ import data from "../content/data.json";
 
 export const PageProjects = () => {
 	return (
-		<>
+		<div className="main-projects">
 			<p>{data.pageProjects.paragraph}</p>
 			<ul>
 				<li><a href="https://event.ella-rotari.com/" target="blank">Event Planner</a></li>
@@ -15,6 +15,6 @@ export const PageProjects = () => {
 				<li><a href="https://jsxcalculator.netlify.app/" target="blank">React Calculator</a></li>
 				<li><a href="https://marceljaworski.de/" target="blank">My Personal Web-seite</a></li>
 			</ul>
-		</>
+		</div>
 	);
 };
