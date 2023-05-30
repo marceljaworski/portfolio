@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "start": "vite serve --host --port 3555",
+    "setup": "npm i && npm run build && pm2 start --name marceljaworski-portfolio npm -- start --update-env --time && pm2 save",
+    "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart marceljaworski-portfolio --update-env --time && pm2 save",
     "preview": "vite preview --port 8080", 
     "cp": "node cli/cp.mjs"
   },
