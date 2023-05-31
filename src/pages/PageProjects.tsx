@@ -13,7 +13,7 @@ export const PageProjects = () => {
 				<li><a href="https://stopwatch-jsx.netlify.app/" target="blank">Stopwatch</a></li>
 				<li><a href="https://tic-tac-toe-marceljaworski.vercel.app/" target="blank">Angular tic-tac-toe game</a></li>
 				<li><a href="https://jsxcalculator.netlify.app/" target="blank">React Calculator</a></li>
-				<li><a href="https://marceljaworski.de/" target="blank">My Personal Web-seite</a></li>
+				<li><a href="https://marceljaworski.github.io/marceljaworski/" target="blank">My first personal website</a></li>
 			</ul>
 		</div>
 	);
