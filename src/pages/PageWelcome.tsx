@@ -7,7 +7,7 @@ import data from '../content/data.json'
 
 
 export const PageWelcome= () => {
-   
+    
 	return (
 		<>
             <section className="main-programer__text-container--escaped">
@@ -34,9 +34,10 @@ export const PageWelcome= () => {
                     &lt;/main&gt;
                 </p>
             </section>
-            {data.pageWelcome.posts.map((post, i: number) => {
+            {data.pageWelcome.posts.map((el , i: number) => {
+                
 						return (
-                            <Post post={post} key={i}/>   
+                            <Post post={el} key={i}/>   
 						)
 					})}
 		</>
