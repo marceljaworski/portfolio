@@ -1,6 +1,7 @@
 
 import './PageWelcome.scss';
 import { Post } from '../components/post';
+import data from '../content/data.json'
 
 export const PageWelcome = () => {
 	return (
@@ -29,7 +30,11 @@ export const PageWelcome = () => {
                     &lt;/main&gt;
                 </p>
             </section>
-            <Post/>
+            {data.pageWelcome.posts.map((el: any, i: any) => {
+						return (
+                            <Post post={el} key={i}/>   
+						)
+					})}
 		</>
 	);
 };

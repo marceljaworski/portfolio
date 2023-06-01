@@ -1,8 +1,13 @@
-export const Post = () => {
+export const Post = ({post}) => {
     return (
         <article className="main">
-            <h2>How I create this site</h2>
-            <p>So richten Sie eine React-Site als primäre Domain-Site auf einem Debian-Computer in Hetzner mit Nginx/Certbot/pm2 ein</p>
+            <h2>{post.title}</h2>
+            <p>{post.description}</p>
+            <ul>
+                {post.steps.map((el: any, i: any)=> {
+                    return <li key={i}><p>{el}</p></li>
+                })}
+            </ul>
         </article>
     )
 }

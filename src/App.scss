@@ -36,18 +36,18 @@ body {
 		padding: .5rem;
 
 	}
-	.main-projects {
+	
 		
-		ul {
-			display: block;
-			list-style-type: disc;
-			margin-block-start: 1em;
-			margin-block-end: 1em;
-			margin-inline-start: 0px;
-			margin-inline-end: 0px;
-			padding-inline-start: 40px;
-		}
+	ul {
+		display: block;
+		list-style-type: disc;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 40px;
 	}
+
 
 	.main-about {
 		
@@ -130,9 +130,9 @@ body {
 		p {
 			font-size: 1.2rem;
 		}
-		article {
-			margin: .5rem;
-		}
+		// article {
+		// 	margin: .5rem;
+		// }
 	}
 	.subtitle {
 		margin: 1em 0;
