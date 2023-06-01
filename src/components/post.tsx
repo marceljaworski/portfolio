@@ -3,8 +3,12 @@ interface Post {
     description: string;
     steps: string[];
 }
+interface PostProps {
+    post: Post;
+}
 
-export const Post = ({post}) => {
+
+export const Post = ({post}:PostProps) => {
     
     return (
         <article className="main">
