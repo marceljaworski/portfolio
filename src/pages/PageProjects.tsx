@@ -2,7 +2,7 @@ import data from "../content/data.json";
 
 export const PageProjects = () => {
 	return (
-		<div className="main-projects">
+		<div className="main main-projects">
 			<p>{data.pageProjects.paragraph}</p>
 			<ul>
 				<li><a href="https://event.ella-rotari.com/" target="blank">Event Planner</a></li>

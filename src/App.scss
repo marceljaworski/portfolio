@@ -4,8 +4,8 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #333;
-	color: #ccc;
+	background-color: $bodybackground;
+	color: $primary;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Roboto', sans-serif;
 	padding: 0 1rem;
@@ -17,7 +17,7 @@ body {
 
 
 	nav {
-		background-color: #222;
+		background-color: $background;
 		padding: .5rem;
 
 		a {
@@ -30,27 +30,27 @@ body {
 			color: rgb(211, 211, 110);
 		}
 	}
-
-	.main-projects {
-		background-color: #222;
+	.main {
+		background-color: $background;
 		margin-top: .5rem;
 		padding: .5rem;
-		ul {
-			display: block;
-			list-style-type: disc;
-			margin-block-start: 1em;
-			margin-block-end: 1em;
-			margin-inline-start: 0px;
-			margin-inline-end: 0px;
-			padding-inline-start: 40px;
-		}
+
+	}
+	
+		
+	ul {
+		display: block;
+		list-style-type: disc;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 40px;
 	}
 
+
 	.main-about {
-		background-color: #222;
-		margin-top: .5rem;
-		padding: .5rem;
-		// color: #aaa;
+		
 		p {
 			max-width: 700px;
 			color: #aaa;
@@ -130,9 +130,9 @@ body {
 		p {
 			font-size: 1.2rem;
 		}
-		article {
-			margin: .5rem;
-		}
+		// article {
+		// 	margin: .5rem;
+		// }
 	}
 	.subtitle {
 		margin: 1em 0;
