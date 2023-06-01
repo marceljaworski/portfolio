@@ -1,6 +1,6 @@
 # portfolio - page under construction
 
-This is a minimal React site created with Vite with an implemented React Router menu. 
+This is a React site created with Vite with an implemented React Router menu. 
 
 ## includes:
 
