@@ -4,6 +4,11 @@ import { Post } from '../components/post';
 import data from '../content/data.json'
 
 export const PageWelcome = () => {
+    interface Post {
+        title: string;
+        description: string;
+        steps: string[];
+    }
 	return (
 		<>
             <section className="main-programer__text-container--escaped">
@@ -30,9 +35,9 @@ export const PageWelcome = () => {
                     &lt;/main&gt;
                 </p>
             </section>
-            {data.pageWelcome.posts.map((el: any, i: any) => {
+            {data.pageWelcome.posts.map((post: Post, i: number) => {
 						return (
-                            <Post post={el} key={i}/>   
+                            <Post post={post} key={i}/>   
 						)
 					})}
 		</>

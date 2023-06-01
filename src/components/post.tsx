@@ -1,4 +1,11 @@
+interface Post {
+    title: string;
+    description: string;
+    steps: string[];
+}
+
 export const Post = ({post}) => {
+    
     return (
         <article className="main">
             <h2>{post.title}</h2>

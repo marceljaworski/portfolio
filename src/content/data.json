@@ -22,7 +22,7 @@
                     "useContext",
                     "Bereitgestellt auf einer Debian-Maschine in Hetzner mit Nginx/Certbot/pm2"
                 ]
-                }
+            }
         ]
     }
 }
