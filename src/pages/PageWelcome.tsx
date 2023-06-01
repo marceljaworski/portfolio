@@ -1,14 +1,13 @@
 
+
 import './PageWelcome.scss';
 import { Post } from '../components/post';
 import data from '../content/data.json'
 
-export const PageWelcome = () => {
-    interface Post {
-        title: string;
-        description: string;
-        steps: string[];
-    }
+
+
+export const PageWelcome= () => {
+   
 	return (
 		<>
             <section className="main-programer__text-container--escaped">
@@ -35,7 +34,7 @@ export const PageWelcome = () => {
                     &lt;/main&gt;
                 </p>
             </section>
-            {data.pageWelcome.posts.map((post: Post, i: number) => {
+            {data.pageWelcome.posts.map((post, i: number) => {
 						return (
                             <Post post={post} key={i}/>   
 						)
