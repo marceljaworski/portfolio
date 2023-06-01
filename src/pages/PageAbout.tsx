@@ -4,7 +4,7 @@ import data from "../content/data.json";
 export const PageAbout = () => {
 	return (
 		<>
-			<div className="main-about">
+			<div className="main main-about">
 				<header className="headerAbout">
 					<img src={avatar} alt="Avatar" className="avatar"></img>
 					<div className="header-content">
