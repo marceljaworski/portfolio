@@ -25,7 +25,7 @@ export const PageAbout = () => {
 
 				</header>
 				<article>
-					{data.pageAbout.paragraph.map((el, i) => {
+					{data.de.pageAbout.paragraph.map((el, i) => {
 						return (
 							<p key={i}>{el}</p>
 						)

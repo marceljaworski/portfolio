@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 
+
 export const LanguageChooser = () => {
     const { languages, language, changeLanguage } = useContext(AppContext);
 
@@ -11,6 +12,7 @@ export const LanguageChooser = () => {
     return (
         <select value={language} onChange={handleChange}>
             {languages.map(lang => <option key={lang.value} value={lang.value}>{lang.language}</option>)}
+            {/* {Object.keys(translations).map(lang => <option key={lang.value} value={lang.value}>{lang.language}</option>)} */}
         </select>
     );
 }

@@ -1,12 +1,23 @@
 import './App.scss';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
+// import { useContext } from 'react';
+// import { AppContext } from './AppContext';
 import { PageWelcome } from './pages/PageWelcome';
 import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
 import { Page404 } from './pages/Page404';
-import data from './content/data.json';
+import { LanguageChooser } from './components/LanguageChooser';
+import { AppContext } from './AppContext';
+import { useContext } from 'react';
+// import data from './content/data.json';
 
 function App() {
+	const { data } = useContext(AppContext);
+	// const {data, setData} = useState(data)
+	// if (language == "de") {
+	// 	setData(data.de)
+	// }
+	// setData(data.language)
 	return (
 		<div className="App">
 			<h1>Marcel Jaworski</h1>
@@ -14,6 +25,7 @@ function App() {
 				<NavLink to="/welcome">{data.navText[0]}</NavLink>
 				<NavLink to="/projects">{data.navText[1]}</NavLink>
 				<NavLink to="/about">{data.navText[2]}</NavLink>
+				<LanguageChooser/>
 			</nav>
 
 			<Routes>
