@@ -1,7 +1,5 @@
 import './App.scss';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
-// import { useContext } from 'react';
-// import { AppContext } from './AppContext';
 import { PageWelcome } from './pages/PageWelcome';
 import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
@@ -9,15 +7,10 @@ import { Page404 } from './pages/Page404';
 import { LanguageChooser } from './components/LanguageChooser';
 import { AppContext } from './AppContext';
 import { useContext } from 'react';
-// import data from './content/data.json';
 
 function App() {
 	const { data } = useContext(AppContext);
-	// const {data, setData} = useState(data)
-	// if (language == "de") {
-	// 	setData(data.de)
-	// }
-	// setData(data.language)
+
 	return (
 		<div className="App">
 			<h1>Marcel Jaworski</h1>

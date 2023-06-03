@@ -1,5 +1,6 @@
-import { createContext, useEffect, useState } from "react";
-import data from './content/data.json';
+import { createContext, useState } from "react";
+import dataEN from './content/dataEN.json'
+import dataDE from './content/dataDE.json'
 
 interface Lang {
     value: string;
@@ -7,7 +8,6 @@ interface Lang {
 
 }
 interface Data {
-    
     [key: string]: any;
 }
 
@@ -28,6 +28,8 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
     const appTitle = 'portfolio site';
     const [language, setLanguage] = useState("de");
+    const [data, setData] = useState(dataDE);
+    
     const languages = [ 
         {
             value: "de",
@@ -42,8 +44,15 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
     console.log(language)
     const changeLanguage = (language: string) => {
         setLanguage(language);
-    }
+        if (language == "de"){
+            setData(dataDE)
 
+        }
+        if (language == "en") {
+            setData(dataEN)
+        }
+    }
+    
 
     return (
         <AppContext.Provider
@@ -51,7 +60,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
                 appTitle,
                 language,
                 languages,
-                data: data.de,
+                data,
 
                 changeLanguage,
             }}>

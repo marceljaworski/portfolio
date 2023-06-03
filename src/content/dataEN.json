@@ -1,0 +1,28 @@
+{
+    "navText": ["Welcome", "Projects", "About me"],
+    "pageAbout": {
+        "paragraph": ["Hallo, ich bin Marcel Jaworski, Webentwickler mit einem Hochschulabschluss in Medienwissenschaften und Erfahrung in Fotografie, Bildbearbeitung und Marketing. Dadurch habe ich ein tiefes Verständnis für visuelle Ästhetik, das Erzählen von Geschichten und das Erzeugen von Emotionen.", "All diese Fähigkeiten ermöglichen es mir, visuell ansprechende und hochfunktionale Websites zu gestalten. Mit meinen technischen Kenntnissen in Programmiersprachen wie HTML, CSS und JavaScript setze ich Ihre Ideen in attraktive, intuitive und responsive Websites um.", "Mein Ansatz basiert darauf, Ihre spezifischen Bedürfnisse zu verstehen und diese in eine effektive Online-Präsenz umzusetzen. Von der Planung und Konzeption bis hin zur Entwicklung und Implementierung arbeite ich mit Ihnen zusammen, um sicherzustellen, dass Ihre Website Ihre Vision widerspiegelt und eine sinnvolle Verbindung zu Ihrem Publikum herstellt.", "Wenn Sie auf der Suche nach einem Webentwickler sind, der audiovisuelle Erfahrung mit starken technischen Fähigkeiten kombiniert, bin ich hier, um Ihnen zu helfen, die Online-Präsenz Ihres Unternehmens auf die nächste Stufe zu heben. Gemeinsam können wir ein digitales Erlebnis schaffen, das einen bleibenden Eindruck hinterlässt.", "Abschließend möchte ich noch erwähnen, dass mein Hobby, das Jonglieren, nichts mit Programmierung zu tun hat, mir jedoch hilft, meine Konzentration, Koordination, Disziplin, Anpassungsfähigkeit und Kreativität bei der Lösung von Problemen zu verbessern."]
+    },
+    "pageProjects": {
+        "paragraph": "Hier finden Sie Links zu Beispielen meiner Praxis und Arbeit als Webentwickler.",
+        "chatGpt": { 
+            "text": "Unter Verwendung der leistungsstarken OpenAI-API habe ich eine Anwendung namens ChatGPT Clone entwickelt. Diese Anwendung nutzt künstliche Intelligenz von OpenAI, um interaktiv und in Echtzeit Antworten auf Benutzerfragen zu liefern. Ich habe eine ansprechende Benutzeroberfläche implementiert, die dem Original-ChatGPT ähnelt. Für das Frontend habe ich React und Vite, ein JavaScript-Framework, verwendet. Darüber hinaus habe ich den Server-Backend separat auf der OnRender-Plattform bereitgestellt. Auf der OnRender-Plattform verwaltet der Server-Backend Benutzerfragen und die über die OpenAI-API erhaltenen Antworten. Meinen persönlichen API-Schlüssel als registrierter Benutzer bei OpenAI speichere ich sicher und vertraulich auf diesem Server. Diese modulare Architektur, bei der der Server-Backend und das Frontend separat auf der OnRender-Plattform bereitgestellt werden, gewährleistet einen sicheren und skalierbaren Betrieb von ChatGPT Clone und bietet den Benutzern ein reibungsloses und interaktives Chat-Erlebnis." 
+        }
+    },
+    "pageWelcome": {
+        "posts": [ 
+            { 
+                "title": "Wie ich diese Seite erstelle", 
+                "description": "Dies ist eine mit Vite erstellte React-Site mit implementiertem React-Router-Menü.",
+                "steps": [
+                    "gebaut mit Vite",
+                    "React Router menu",
+                    "TypeScript",
+                    "Sass",
+                    "useContext",
+                    "Bereitgestellt auf einer Debian-Maschine in Hetzner mit Nginx/Certbot/pm2"
+                ]
+            }
+        ]
+    }
+}
