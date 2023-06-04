@@ -2,12 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto';
 }
 body {
 	background-color: $bodybackground;
 	color: $primary;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Roboto', sans-serif;
 	padding: 0 1rem;
 
 	h1 {
