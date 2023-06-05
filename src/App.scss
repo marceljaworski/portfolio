@@ -16,9 +16,12 @@ body {
 
 
 	nav {
+		height: 2rem;
 		background-color: $background;
 		padding: .5rem;
-
+		display: flex;
+		text-align: center;
+		position: relative;
 		a {
 			color: #aaa;
 			text-decoration: none;
@@ -27,6 +30,12 @@ body {
 
 		a.active {
 			color: rgb(211, 211, 110);
+		}
+		.languageContainer {
+			display: inline-block;
+			position: absolute;
+			right: .5rem;
+			bottom: .1rem;
 		}
 	}
 	.main {
