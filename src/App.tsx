@@ -4,9 +4,13 @@ import { PageWelcome } from './pages/PageWelcome';
 import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
 import { Page404 } from './pages/Page404';
-import data from './content/data.json';
+import { LanguageChooser } from './components/LanguageChooser';
+import { AppContext } from './AppContext';
+import { useContext } from 'react';
 
 function App() {
+	const { data } = useContext(AppContext);
+
 	return (
 		<div className="App">
 			<h1>Marcel Jaworski</h1>
@@ -14,6 +18,7 @@ function App() {
 				<NavLink to="/welcome">{data.navText[0]}</NavLink>
 				<NavLink to="/projects">{data.navText[1]}</NavLink>
 				<NavLink to="/about">{data.navText[2]}</NavLink>
+				<LanguageChooser/>
 			</nav>
 
 			<Routes>

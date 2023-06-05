@@ -2,12 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto';
 }
 body {
 	background-color: $bodybackground;
 	color: $primary;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Roboto', sans-serif;
 	padding: 0 1rem;
 
 	h1 {
@@ -17,9 +16,12 @@ body {
 
 
 	nav {
+		height: 2rem;
 		background-color: $background;
 		padding: .5rem;
-
+		display: flex;
+		text-align: center;
+		position: relative;
 		a {
 			color: #aaa;
 			text-decoration: none;
@@ -28,6 +30,12 @@ body {
 
 		a.active {
 			color: rgb(211, 211, 110);
+		}
+		.languageContainer {
+			display: inline-block;
+			position: absolute;
+			right: .5rem;
+			bottom: .1rem;
 		}
 	}
 	.main {

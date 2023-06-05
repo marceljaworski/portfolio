@@ -1,13 +1,11 @@
-
-
 import './PageWelcome.scss';
-import { Post } from '../components/post';
-import data from '../content/data.json'
-
+import { Post } from '../components/Post';
+import { AppContext } from '../AppContext';
+import { useContext } from 'react';
 
 
 export const PageWelcome= () => {
-    
+    const { data } = useContext(AppContext);
 	return (
 		<>
             <section className="main-programer__text-container--escaped">
@@ -34,12 +32,12 @@ export const PageWelcome= () => {
                     &lt;/main&gt;
                 </p>
             </section>
-            {data.pageWelcome.posts.map((el , i: number) => {
+            {data.pageWelcome.posts.map((el: any , i: number) => {
                 
-						return (
-                            <Post post={el} key={i}/>   
-						)
-					})}
+				return (
+                    <Post post={el} key={i}/>   
+				)
+			})}
 		</>
 	);
 };

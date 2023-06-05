@@ -1,6 +1,9 @@
-import data from "../content/data.json";
+
+import { AppContext } from '../AppContext';
+import { useContext } from 'react';
 
 export const PageProjects = () => {
+	const { data } = useContext(AppContext);
 	return (
 		<div className="main main-projects">
 			<p>{data.pageProjects.paragraph}</p>

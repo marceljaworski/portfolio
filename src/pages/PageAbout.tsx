@@ -1,7 +1,10 @@
 import avatar from "../images/profil-bild.jpg";
 // import github from "../images/github-142-svgrepo-com.svg";
-import data from "../content/data.json";
+import { AppContext } from '../AppContext';
+import { useContext } from 'react';
+
 export const PageAbout = () => {
+	const { data } = useContext(AppContext);
 	return (
 		<>
 			<div className="main main-about">
@@ -25,7 +28,7 @@ export const PageAbout = () => {
 
 				</header>
 				<article>
-					{data.pageAbout.paragraph.map((el, i) => {
+					{data.pageAbout.paragraph.map((el: any, i:any) => {
 						return (
 							<p key={i}>{el}</p>
 						)

@@ -1,0 +1,28 @@
+{
+    "navText": ["Welcome", "Projects", "About me"],
+    "pageAbout": {
+        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "If you click on Looking for a web developer that combines audiovisual experience with strong technical skills, I'm here to help you take your company's online presence to the next level. Together we can create a digital experience that leaves a lasting impression.", "Finally, I would like to mention that my hobby of juggling has nothing to do with programming, but it helps me to develop my focus, coordination, discipline, adaptability and Enhance creativity in problem solving."]
+    },
+    "pageProjects": {
+        "paragraph": "Here you will find links to examples of my practice and work as a web developer.",
+        "chatGpt": { 
+            "text": "Using the powerful OpenAI API, I've developed an application called ChatGPT Clone. This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions. I've implemented a responsive user interface that resembles the original ChatGPT. For the frontend, I used React and Vite, a JavaScript framework.Furthermore, I deployed the server backend separately on the OnRender platform.On the OnRender platform, the server backend manages user queries and those via the OpenAI API received responses. As a registered user at OpenAI, I store my personal API key securely and confidentially on this server. This modular architecture, in which the server backend and the frontend are provided separately on the OnRender platform, ensures secure and scalable operation by ChatGPT Clone and provides users with a smooth and interactive chat experience."
+        }
+    },
+    "pageWelcome": {
+        "posts": [ 
+            { 
+                "title": "How do I create this page?", 
+                "description": "This is a React site built with Vite with implemented React router menu.",
+                "steps": [
+                    "built with Vite",
+                    "React Router menu",
+                    "TypeScript",
+                    "Sass",
+                    "useContext",
+                    "Deployed to a Debian machine in Hetzner with Nginx/Certbot/pm2"
+                ]
+            }
+        ]
+    }
+}
