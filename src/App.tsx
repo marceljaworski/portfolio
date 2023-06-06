@@ -5,6 +5,7 @@ import { PageProjects } from './pages/PageProjects';
 import { PageAbout } from './pages/PageAbout';
 import { Page404 } from './pages/Page404';
 import { LanguageChooser } from './components/LanguageChooser';
+import { Theme } from './components/Theme'
 import { AppContext } from './AppContext';
 import { useContext } from 'react';
 
@@ -18,6 +19,7 @@ function App() {
 				<NavLink to="/welcome">{data.navText[0]}</NavLink>
 				<NavLink to="/projects">{data.navText[1]}</NavLink>
 				<NavLink to="/about">{data.navText[2]}</NavLink>
+				<Theme/>
 				<LanguageChooser/>
 			</nav>
 
