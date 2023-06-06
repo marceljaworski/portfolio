@@ -10,12 +10,12 @@ import { AppContext } from './AppContext';
 import { useContext } from 'react';
 
 function App() {
-	const { data } = useContext(AppContext);
+	const { data, lightMode } = useContext(AppContext);
 
 	return (
-		<div className="App">
+		<div className={"App "+ (lightMode ? 'light' : 'dark')}>
 			<h1>Marcel Jaworski</h1>
-			<nav>
+			<nav className='nav'>
 				<NavLink to="/welcome">{data.navText[0]}</NavLink>
 				<NavLink to="/projects">{data.navText[1]}</NavLink>
 				<NavLink to="/about">{data.navText[2]}</NavLink>
