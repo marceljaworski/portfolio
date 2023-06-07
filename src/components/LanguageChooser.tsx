@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { AppContext } from '../AppContext';
 import TranslateIcon from '@mui/icons-material/Translate';
+import './LanguageChooser.scss'
 
 
 
@@ -10,6 +11,7 @@ export const LanguageChooser = () => {
 
     const handleChange = (event:React.ChangeEvent<HTMLSelectElement>):void => {
         changeLanguage(event.target.value);
+        setShowLanguages(!showLanguages);
     };
     const handleShow = () => {
         setShowLanguages(!showLanguages)
@@ -18,11 +20,18 @@ export const LanguageChooser = () => {
 
     return (
 
-        <div className='languageContainer' onClick={handleShow}>
-            {showLanguages && <select value={language} onChange={handleChange}>
-                {languages.map(lang => <option key={lang.value} value={lang.value}>{lang.language}</option>)}
-            </select>}
-            <TranslateIcon fontSize='small'/>
+        <div className='languageContainer'>
+            {showLanguages && 
+                <div className='dropdown-language'>
+                    <label htmlFor="languages">Choose a Language: </label>
+                    <select id="languages" value={language} onChange={handleChange}>
+                        {languages.map(lang => <option key={lang.value} value={lang.value}>{lang.language}</option>)}
+                    </select>
+                </div>
+            
+            }
+            {!showLanguages &&<TranslateIcon onClick={handleShow} fontSize='small'/>}
+            
         </div>
    
     );

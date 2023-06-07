@@ -1,0 +1,13 @@
+.languageContainer {
+    display: inline-block;
+    position: absolute;
+    right: .5rem;
+    bottom: .1rem;
+
+    .dropdown-language {
+        line-height: 30px;
+        padding-left: .5rem;
+        background-color: $background-dark;
+     
+    }
+}

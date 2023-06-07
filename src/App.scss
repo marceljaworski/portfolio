@@ -8,6 +8,7 @@
 /* Themes */
 
 .dark {
+	
 	background-color: $gray3;
 	color: $primary;
 
@@ -45,13 +46,13 @@
 //     $bg: $background-dark;
 // }
 
-body {
-	height: 100vh;
-	width: 100%;
+.App {
+	min-height: 100vh;
+	padding: .5rem 1rem;
 	
 	
 	h1 {
-		margin: 1rem 0 ;
+		
 		color: rgb(209, 168, 85);
 	}
 
@@ -75,17 +76,9 @@ body {
 			color: rgb(211, 211, 110);
 		}
 
-		.languageContainer {
-			display: inline-block;
-			position: absolute;
-			right: .5rem;
-			bottom: .1rem;
-		}
+		
 	}
 
-	.App {
-		padding: .5rem;
-	}
 	
 	.main {
 		margin-top: .5rem;
