@@ -14,13 +14,17 @@ function App() {
 
 	return (
 		<div className={"App "+ (lightMode ? 'light' : 'dark')}>
-			<h1>Marcel Jaworski</h1>
 			<nav className='nav'>
-				<NavLink to="/welcome">{data.navText[0]}</NavLink>
-				<NavLink to="/projects">{data.navText[1]}</NavLink>
-				<NavLink to="/about">{data.navText[2]}</NavLink>
-				<Theme/>
-				<LanguageChooser/>
+				<NavLink to="/welcome"><h1>Marcel Jaworski</h1></NavLink>
+				<div className='nav-items'>
+					<NavLink to="/welcome">{data.navText[0]}</NavLink>
+					<NavLink to="/projects">{data.navText[1]}</NavLink>
+					<NavLink to="/about">{data.navText[2]}</NavLink>
+				</div>
+				<div className='nav-icons'>
+					<Theme/>
+					<LanguageChooser/>
+				</div>
 			</nav>
 
 			<Routes>

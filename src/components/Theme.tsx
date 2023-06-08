@@ -14,8 +14,8 @@ export const Theme = () => {
     return (
 
         <div onClick={handleMode} /*className='has-dropdown'*/>
-            {!lightMode && <a><LightModeIcon fontSize='small' /*href='#'*/ /></a>}
-            {lightMode && <a><DarkModeIcon fontSize='small' /*href='#'*/ /></a>}
+            {!lightMode && <LightModeIcon className='icon' fontSize='small' /*href='#'*/ />}
+            {lightMode && <DarkModeIcon className='icon' fontSize='small' /*href='#'*/ />}
             {/* <ul className='dropdown'>
                 <li className='dropdown-item'>
                     <a id='light' href='#'>light</a>

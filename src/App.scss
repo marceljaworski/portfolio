@@ -9,46 +9,38 @@
 
 .dark {
 	
-	background-color: $gray3;
+	
+	background-color: $gray4;
 	color: $primary;
 
 	a {
 		color: $primary;
 	}
-	.nav {
-		background-color: $background-dark;
-	}
+
 	.main {
 		background-color: $background-dark;
 	}
 	
 } 
 .light {
-	background-color: $primary;
+	background-color: $white;
 	color: $background-dark;
 
 	a {
 		color: $background-dark;
 	}
-	.nav {
-		background-color: $gray1;
+	.nav a {
+		color: $primary;
 	}
+	
 	.main {
 		background-color: $gray1;
 	}
 }
-// .light {
-//     $text: $black;
-//     $bg: $primary;
-// }
-// .dark {
-//     $text: $primary;
-//     $bg: $background-dark;
-// }
 
 .App {
 	min-height: 100vh;
-	padding: .5rem 1rem;
+	// padding: .5rem 1rem;
 	
 	
 	h1 {
@@ -57,21 +49,31 @@
 	}
 
 	a {
-		
 		text-decoration: none;
 	}
 
 	.nav {
-		height: 2rem;
-		padding: .5rem;
+		width: 100%;
+		height: 50px;
+		background-color: $background-dark;
 		display: flex;
-		text-align: center;
+		align-items: center;
+		justify-content: space-evenly;
 		position: relative;
-
-		a {
-			margin-right: 1rem;
+		.nav-items {
+			width: 25%;
+			display: flex;
+			justify-content: space-between;
 		}
-
+		.nav-icons {
+			width: 10%;
+			display: flex;
+			justify-content: space-around;
+		}
+		.icon {
+			color: $primary;
+		}
+		
 		a.active {
 			color: rgb(211, 211, 110);
 		}
@@ -81,10 +83,8 @@
 
 	
 	.main {
-		margin-top: .5rem;
-		padding: 0 1rem;
-		
-
+		margin: 1rem;
+		padding: 1rem;
 	}
 		
 	ul {
