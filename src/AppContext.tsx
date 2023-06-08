@@ -29,7 +29,7 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
     const [language, setLanguage] = useState("de");
     const [data, setData] = useState(dataDE);
-    const [ lightMode, setLightMode ] = useState(true);
+    const [ lightMode, setLightMode ] = useState(false);
     
     const languages = [ 
         {
