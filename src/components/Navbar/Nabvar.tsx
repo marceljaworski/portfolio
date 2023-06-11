@@ -31,8 +31,25 @@ interface Props {
      * You won't need it on your project.
      */
     window?: () => Window;
+    children: React.ReactElement;
 }
   
+function HideOnScroll(props: Props) {
+    const { children, window } = props;
+    // Note that you normally won't need to set the window ref as useScrollTrigger
+    // will default to window.
+    // This is only being set here because the demo is in an iframe.
+    const trigger = useScrollTrigger({
+      target: window ? window() : undefined,
+    });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
 
 export const Navbar = (props: Props) => {
     const navigate = useNavigate();
@@ -69,7 +86,8 @@ export const Navbar = (props: Props) => {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" position='sticky' enableColorOnDark>
+            <HideOnScroll {...props}>
+            <AppBar component="nav" enableColorOnDark>
               <Toolbar>
                 <IconButton
                   color="inherit"
@@ -96,6 +114,7 @@ export const Navbar = (props: Props) => {
                 </Box>
               </Toolbar>
             </AppBar>
+            </HideOnScroll>
             <Box component="nav">
               <Drawer
                 container={container}
