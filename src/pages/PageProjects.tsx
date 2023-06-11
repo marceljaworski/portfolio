@@ -4,11 +4,15 @@ import { AppContext } from '../AppContext';
 import { useContext } from 'react';
 import { red } from '@mui/material/colors';
 
+// import Grid from '@mui/material/Grid';
+
+
 export const PageProjects = () => {
 	const { data } = useContext(AppContext);
 	return (
 		<div className="main main-projects">
 			<p>{data.pageProjects.paragraph}</p>
+			
 				<Card sx={{ maxWidth: 345 }}>
 					<CardHeader
 						avatar={
@@ -24,7 +28,7 @@ export const PageProjects = () => {
 						 <a href="https://event.ella-rotari.com/" target="blank"><Typography>https://event.ella-rotari.com/</Typography></a>
 
 					
-						<Typography variant='h3'>Event Planner</Typography>
+						<Typography variant='h4'>Event Planner</Typography>
 						<Typography variant='h6'>Stack</Typography>
 						
 						<Typography> React(Vite), Auth0, Firebase, SendGrid, SWR, Stripe, Express, MongoDB, Mongoose.</Typography>

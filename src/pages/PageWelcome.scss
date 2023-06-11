@@ -4,7 +4,7 @@
 // }
 .main-programer__text-container{
     padding: 1rem;
-    
+    color: $background-dark;
     line-height: 1.5em;
     background: linear-gradient(145deg, #262626, #404040);
     // box-shadow:  20px 20px 60px #2b2b2b,
@@ -13,6 +13,7 @@
 .main-programer__text-container--escaped{
     padding-left: 0.5rem;
     line-height: 1.5em;
+    
     overflow: hidden;
     background: linear-gradient(145deg, #222,  #262626);
     // box-shadow:  2px 2px 6px #2b2b2b,
@@ -28,13 +29,13 @@
     text-align: center;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
-    color: $primary;
+    color: $white;
 }
 .main-programer__text--escaped{
     text-align: left;
     letter-spacing: 0.1rem;
     font-size: 1rem;
-    color: $gray1;
+    color: $gray4;
 }
 .programer-icon__main-container{
     display: grid;

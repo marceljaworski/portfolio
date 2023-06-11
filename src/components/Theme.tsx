@@ -3,6 +3,7 @@ import { AppContext } from '../AppContext';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import './Theme.scss'
+import { color } from '@mui/system';
 
 
 export const Theme = () => {
@@ -27,6 +28,6 @@ export const Theme = () => {
             </ul> */}
             
         </div>
-   
+    
     );
 }

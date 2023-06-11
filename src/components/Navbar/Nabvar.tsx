@@ -15,6 +15,10 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import Container from '@mui/material/Container';
+import Slide from '@mui/material/Slide';
+
 import { navItems } from './consts/navItems';
 import { useNavigate } from 'react-router';
 
@@ -65,7 +69,7 @@ export const Navbar = (props: Props) => {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav">
+            <AppBar component="nav" position='sticky' enableColorOnDark>
               <Toolbar>
                 <IconButton
                   color="inherit"

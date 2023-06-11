@@ -2,6 +2,7 @@ import './PageWelcome.scss';
 import { Post } from '../components/Post';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
+import { Typography } from '@mui/material';
 
 
 export const PageWelcome= () => {
@@ -19,7 +20,7 @@ export const PageWelcome= () => {
                 </section>
                 <section className="main-programer__text-container">
                     <h1 className="main-programer__title"><span className="element">&lt;h1 </span><span className="class">class=</span><span className="wert">"main-about__title"</span><span className="element">&gt;</span>Marcel Jaworski<span className="element">&lt;/h1&gt;</span></h1>
-                    <p className="main-programer__text"><span className="commentar">/*</span> Junior Full Stack Developer <span className="commentar">*/</span></p>
+                    <Typography className="main-programer__text"> <span className="commentar">/*</span> Junior Full Stack Developer <span className="commentar">*/</span></Typography>
                 </section>
                 <section className="main-programer__text-container--escaped">
                     <p className="main-programer__text--escaped">
