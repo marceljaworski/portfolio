@@ -25,11 +25,4 @@ export const navItems = [
         route: 'about'
 
     },
-    // {
-    //     id: 3,
-    //     icon: <LanguageIcon />,
-    //     label: 'Languages',
-    //     route: 'route'
-
-    // }
 ]

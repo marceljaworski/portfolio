@@ -3,13 +3,16 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { AppProvider } from './AppContext';
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import { blue, orange } from "@mui/material/colors";
+import { blue, deepPurple, orange } from "@mui/material/colors";
+
+
+
 
 const theme = createTheme({
 	palette: {
 		mode: "dark",
 		primary: {
-			main: blue[400]
+			main: deepPurple[400]
 		},
 		secondary: {
 			main: orange[800]
@@ -18,6 +21,8 @@ const theme = createTheme({
 	},
 	
 })
+
+
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 
@@ -28,6 +33,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 				<App />
 			</BrowserRouter>
 		</AppProvider>
-	</ThemeProvider>	
+	</ThemeProvider>	 
 		
 );

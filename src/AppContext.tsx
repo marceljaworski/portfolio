@@ -11,6 +11,7 @@ interface Data {
     [key: string]: any;
 }
 
+
 interface IAppContext {
     language: string;
     data: Data;
@@ -30,6 +31,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
     const [language, setLanguage] = useState("de");
     const [data, setData] = useState(dataDE);
     const [ lightMode, setLightMode ] = useState(false);
+    
     
     const languages = [ 
         {
@@ -63,6 +65,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
                 changeLanguage,
                 setLightMode,
                 lightMode,
+
+              
             }}>
             {children}
         </AppContext.Provider>

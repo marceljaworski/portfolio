@@ -1,44 +1,52 @@
 
 import {  Card, CardContent, CardActions, Typography, CardHeader, Avatar} from '@mui/material';
 import { AppContext } from '../AppContext';
-import { useContext } from 'react';
+import { JSXElementConstructor, ReactElement, ReactFragment, ReactPortal, useContext } from 'react';
 import { red } from '@mui/material/colors';
 
 // import Grid from '@mui/material/Grid';
-
+interface project {
+	title: string,
+	description: string,
+	stack: string,
+	features: string,
+	link: string,
+	date: string
+}
 
 export const PageProjects = () => {
 	const { data } = useContext(AppContext);
 	return (
 		<div className="main main-projects">
 			<p>{data.pageProjects.paragraph}</p>
-			
-				<Card sx={{ maxWidth: 345 }}>
+				{data.pageProjects.projects.map((item: project) =>
+					<Card sx={{ maxWidth: 345 }}>
 					<CardHeader
 						avatar={
 							<Avatar sx={{ bgcolor: red[500]}}>E</Avatar>
 						}
-						title="Event Planner"
-						subheader="April 04, 2023"
+						title={item.title}
+						subheader={item.date}
 						
 					/>
 
 					<CardContent>
 					
-						 <a href="https://event.ella-rotari.com/" target="blank"><Typography>https://event.ella-rotari.com/</Typography></a>
+						 <a href={item.link} target="blank"><Typography>{item.link}</Typography></a>
 
 					
-						<Typography variant='h4'>Event Planner</Typography>
+						<Typography variant='h4'>{item.title}</Typography>
 						<Typography variant='h6'>Stack</Typography>
 						
-						<Typography> React(Vite), Auth0, Firebase, SendGrid, SWR, Stripe, Express, MongoDB, Mongoose.</Typography>
+						<Typography>{item.stack}</Typography>
 						<Typography variant='h6'>Features</Typography>
 						
-						<Typography>Real-Live Chat, Admins Dashboard to control the Data, Auth0, Online payment, etc.</Typography>
+						<Typography>{item.features}</Typography>
 					</CardContent>
 				</Card>
-				<a href="https://chat-gpt-clone-mj6c.onrender.com/" target="blank">ChatGPT clone</a>
-				<a href="https://glossary-marceljaworski.vercel.app/" target="blank">Web Developer Glossary</a>
+				)}
+				
+				
 				<a href="https://angular-online-shop.vercel.app/" target="blank">Angular online shop</a>
 				<a href="https://bored-api-marceljaworski.vercel.app/" target="blank">Bored App API</a>
 				<a href="https://stopwatch-jsx.netlify.app/" target="blank">Stopwatch</a>
