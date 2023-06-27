@@ -8,15 +8,12 @@ import { LanguageChooser } from './components/LanguageChooser';
 import { Theme } from './components/Theme';
 import { AppContext } from './AppContext';
 import { useContext } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
 
-// import { Navbar } from './components/Navbar/Nabvar';
 
 
 function App() {
 	const { data, lightMode } = useContext(AppContext);
-	
-
-  
 
 	return (
 		<div className={"App "+ (lightMode ? 'light' : 'dark')}>
@@ -31,13 +28,16 @@ function App() {
 					<Theme/>
 					<LanguageChooser/>
 				</div>
+				<div className='dropdown'>
+				<MenuIcon className="dropbtn"></MenuIcon>
+					<div className='dropdown-content'>
+						<NavLink to="/welcome">{data.navText[0]}</NavLink>
+						<NavLink to="/projects">{data.navText[1]}</NavLink>
+						<NavLink to="/about">{data.navText[2]}</NavLink>
+					</div>
+				</div>
+			
 			</nav>
-
-
-			{/* <Navbar /> */}
-			
-			
-
 
 			<Routes>
 

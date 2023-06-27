@@ -1,10 +1,9 @@
-
-import {  Card, CardContent, CardActions, Typography, CardHeader, Avatar} from '@mui/material';
+import './PageProjects.scss';
+import { CardContent, Typography, CardHeader, Avatar} from '@mui/material';
 import { AppContext } from '../AppContext';
-import { JSXElementConstructor, ReactElement, ReactFragment, ReactPortal, useContext } from 'react';
-import { red } from '@mui/material/colors';
+import { useContext } from 'react';
+import { orange } from '@mui/material/colors';
 
-// import Grid from '@mui/material/Grid';
 interface project {
 	title: string,
 	description: string,
@@ -20,10 +19,10 @@ export const PageProjects = () => {
 		<div className="main main-projects">
 			<p>{data.pageProjects.paragraph}</p>
 				{data.pageProjects.projects.map((item: project) =>
-					<Card sx={{ maxWidth: 345 }}>
+					<div className='card'>
 					<CardHeader
 						avatar={
-							<Avatar sx={{ bgcolor: red[500]}}>E</Avatar>
+							<Avatar sx={{ bgcolor: orange[700]}}>E</Avatar>
 						}
 						title={item.title}
 						subheader={item.date}
@@ -43,7 +42,7 @@ export const PageProjects = () => {
 						
 						<Typography>{item.features}</Typography>
 					</CardContent>
-				</Card>
+				</div>
 				)}
 				
 				

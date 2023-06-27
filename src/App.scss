@@ -8,18 +8,21 @@
 /* Themes */
 
 .dark {
-	
-	
-	background-color: $gray4;
-	color: $primary;
+	background-color: $background-dark;
+	color: $gray1;
 
 	a {
 		color: $primary;
 	}
+	.card {
+		border-radius: 6px;
+		background: #222222;
+		box-shadow:  7px 7px 14px #1c1c1c,
+             -7px -7px 14px #282828;
+  }
 
-	
-	
 } 
+
 .light {
 	background-color: $white;
 	color: $background-dark;
@@ -30,6 +33,11 @@
 	.nav a {
 		color: $primary;
 	}
+	.card {
+    background: #e0e0e0;
+    box-shadow:  5px 5px 18px #cacaca,
+             -5px -5px 18px #f6f6f6;
+  }
 	
 	
 }
@@ -37,10 +45,7 @@
 .App {
 	min-height: 100vh;
 	// padding: .5rem 1rem;
-	
-	
 	// h1 {
-		
 	// 	color: rgb(209, 168, 85);
 	// }
 
@@ -61,6 +66,16 @@
 			display: flex;
 			justify-content: space-between;
 		}
+		
+		@media screen and (max-width: 1080px) {
+			.nav-items {
+				display: none;
+			}
+		}
+		.dropdown {
+			display: none;
+		}
+
 		.nav-icons {
 			width: 10%;
 			display: flex;
@@ -71,7 +86,7 @@
 		}
 		
 		a.active {
-			color: rgb(211, 211, 110);
+			color: $yellow;
 		}
 
 		
