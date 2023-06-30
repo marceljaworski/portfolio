@@ -34,7 +34,7 @@ export const PageAbout = () => {
 					{data.pageAbout.paragraph.map((el: any, i:any) => {
 						return (
 							<>
-								<p className="about-text"key={i}>{el}</p>
+								<p className="about-text"key={i}>{el}</p><br/>
 							</>
 							
 						)
