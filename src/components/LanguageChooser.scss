@@ -6,6 +6,7 @@
 
     .dropdown-language {
         position: absolute;
+        width: 250px;
         line-height: 22px;
         color: $gray1;
         top: 50px;
@@ -16,6 +17,6 @@
         border-bottom-left-radius: 6px;
         padding: .5rem;
         background-color: $gray3;
-        transform: translate(-50%);
+        transform: translate(-80%);
     }
 }

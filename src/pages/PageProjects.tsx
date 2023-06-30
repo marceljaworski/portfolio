@@ -22,7 +22,7 @@ export const PageProjects = () => {
 					<div className='card'>
 					<CardHeader
 						avatar={
-							<Avatar sx={{ bgcolor: orange[700]}}>E</Avatar>
+							<Avatar sx={{ bgcolor: orange[500]}}>E</Avatar>
 						}
 						title={item.title}
 						subheader={item.date}
@@ -44,14 +44,6 @@ export const PageProjects = () => {
 					</CardContent>
 				</div>
 				)}
-				
-				
-				<a href="https://angular-online-shop.vercel.app/" target="blank">Angular online shop</a>
-				<a href="https://bored-api-marceljaworski.vercel.app/" target="blank">Bored App API</a>
-				<a href="https://stopwatch-jsx.netlify.app/" target="blank">Stopwatch</a>
-				<a href="https://tic-tac-toe-marceljaworski.vercel.app/" target="blank">Angular tic-tac-toe game</a>
-				<a href="https://jsxcalculator.netlify.app/" target="blank">React Calculator</a>
-				<a href="https://marceljaworski.github.io/marceljaworski/" target="blank">My first personal website</a>
 			
 		</div>
 	);

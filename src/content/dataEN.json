@@ -30,7 +30,64 @@
             "features": "the user can see the terms, show meanings. Manage terms by adding new terms using a form or removing learned terms.",
             "link": "https://glossary-marceljaworski.vercel.app/",
             "date": "December 12, 2022"
+        },
+        { 
+            "description": "",
+            "title": "Online-Shop",
+            "stack": "Angular, Tailwind CSS, Stripe",
+            "features": "As a user, I can filter the items by category and add them to the shopping cart. In the shopping cart I can see, add and remove the selected products. I can complete payment for my order through Stripe.",
+            "link": "https://angular-online-shop.vercel.app/",
+            "date": "May 04, 2023"
+        },
+        { 
+            "description": "",
+            "title": "Bored APP API",
+            "stack": "React(Vite), localStorage",
+            "features": "",
+            "link": "https://bored-api-marceljaworski.vercel.app/",
+            "date": "May 04, 2023"
+        },
+        { 
+            "description": "programming exercise",
+            "title": "Stop Watch",
+            "stack": "JavaScript, CSS",
+            "features": "The user can record each lap. The shortest time will be displayed in green and the longest time in red.",
+            "link": "https://stopwatch-jsx.netlify.app/",
+            "date": "May 04, 2023"
+        },
+        { 
+            "description": "programming exercise, learning Angular",
+            "title": "Tic tac toe",
+            "stack": "Angular, TypeScript, CSS",
+            "features": "",
+            "link": "https://tic-tac-toe-marceljaworski.vercel.app/",
+            "date": "May 09, 2023"
+        },
+        { 
+            "description": "programming exercise, learning Angular",
+            "title": "Calculator",
+            "stack": "React, CSS",
+            "features": "",
+            "link": "https://jsxcalculator.netlify.app/",
+            "date": "May 09, 2023"
+        },
+        { 
+            "description": "My first personal Website!",
+            "title": "Personal Website",
+            "stack": "HTML, SASS",
+            "features": "",
+            "link": "https://marceljaworski.github.io/marceljaworski/",
+            "date": "May 09, 2023"
+        },
+        { 
+            "description": "Programming exercise to learn Bootstrap",
+            "title": "Responsive Bootstrap Website",
+            "stack": "HTML, CSS, Bootstrap",
+            "features": "",
+            "link": "https://marceljaworski.github.io/Responsive-Bootstrap-Webseite/",
+            "date": "Jun 09, 2022"
         }
+
 
         ]
         
