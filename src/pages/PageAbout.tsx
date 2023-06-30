@@ -14,7 +14,7 @@ export const PageAbout = () => {
 					<img src={avatar} alt="Avatar" className="avatar"></img>
 					<div className="header-content">
 						
-						<Typography variant="h5">Full Stack Developer</Typography>
+						<Typography variant="h5">{data.pageAbout.developer}</Typography>
 						<div className="subtitle">
 							<p>HTML | CSS | JavaScript | Node.js | MongoDB | MySQL</p>
 						</div>
