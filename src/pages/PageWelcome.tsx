@@ -10,7 +10,7 @@ export const PageWelcome= () => {
     
 	return (
 		<>
-            <header>
+            <header className='header-welcome'>
                 <section className="main-programer__text-container--escaped">
                         <p className="main-programer__text--escaped">
                         &lt;main class=&quot;main main-programer&quot;&gt;

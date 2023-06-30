@@ -30,7 +30,7 @@ export const LanguageChooser = () => {
                 </div>
             
             }
-            {!showLanguages &&<TranslateIcon className='icon' onClick={handleShow} fontSize='small'/>}
+            <TranslateIcon className='icon' onClick={handleShow} fontSize='small'/>
             
         </div>
    
