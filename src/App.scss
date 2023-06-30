@@ -44,10 +44,6 @@
 
 .App {
 	min-height: 100vh;
-	// padding: .5rem 1rem;
-	// h1 {
-	// 	color: rgb(209, 168, 85);
-	// }
 
 	a {
 		text-decoration: none;
@@ -73,7 +69,33 @@
 			}
 		}
 		.dropdown {
-			display: none;
+			z-index: 3;
+			.dropdown-content {
+				
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+        top: 50px;
+        border-top: 1px solid white;
+
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        padding: .5rem;
+        background-color: $background-dark;
+        transform: translate(-50%);
+			
+				// a{
+				// 	color: $background-dark;
+				// }
+
+			}
+
+		}
+		
+		@media screen and (min-width: 1080px) {
+			.dropdown {
+				display: none;
+			}
 		}
 
 		.nav-icons {

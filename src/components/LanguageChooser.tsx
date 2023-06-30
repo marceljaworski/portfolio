@@ -21,6 +21,7 @@ export const LanguageChooser = () => {
     return (
 
         <div className='languageContainer'>
+            <TranslateIcon className='icon' onClick={handleShow} fontSize='small'/>
             {showLanguages && 
                 <div className='dropdown-language'>
                     <label htmlFor="languages">Choose a Language: </label>
@@ -30,7 +31,7 @@ export const LanguageChooser = () => {
                 </div>
             
             }
-            <TranslateIcon className='icon' onClick={handleShow} fontSize='small'/>
+            
             
         </div>
    

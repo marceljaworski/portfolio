@@ -7,13 +7,17 @@ import { Page404 } from './pages/Page404';
 import { LanguageChooser } from './components/LanguageChooser';
 import { Theme } from './components/Theme';
 import { AppContext } from './AppContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
 
 function App() {
 	const { data, lightMode } = useContext(AppContext);
+	const [showMenu, setShowMenu] = useState(false);
+	const handleShow = () => {
+		setShowMenu(!showMenu)
+}
 
 	return (
 		<div className={"App "+ (lightMode ? 'light' : 'dark')}>
@@ -29,12 +33,12 @@ function App() {
 					<LanguageChooser/>
 				</div>
 				<div className='dropdown'>
-				<MenuIcon className="dropbtn"></MenuIcon>
-					<div className='dropdown-content'>
+				<MenuIcon className="dropbtn icon"  onClick={handleShow}></MenuIcon>
+					{showMenu &&<div className='dropdown-content' onClick={handleShow}>
 						<NavLink to="/welcome">{data.navText[0]}</NavLink>
 						<NavLink to="/projects">{data.navText[1]}</NavLink>
 						<NavLink to="/about">{data.navText[2]}</NavLink>
-					</div>
+					</div>}
 				</div>
 			
 			</nav>
