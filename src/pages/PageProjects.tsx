@@ -17,7 +17,7 @@ export const PageProjects = () => {
 	const { data } = useContext(AppContext);
 	return (
 		<div className="main main-projects">
-			<p>{data.pageProjects.paragraph}</p>
+			{/* <p>{data.pageProjects.paragraph}</p> */}
 				{data.pageProjects.projects.map((item: project) =>
 					<div className='card'>
 					<CardHeader
@@ -31,7 +31,7 @@ export const PageProjects = () => {
 
 					<CardContent>
 					
-						 <a href={item.link} target="blank"><Typography>{item.link}</Typography></a>
+						 <a href={item.link} target="blank"><Typography className='card-link'>{item.link}</Typography></a>
 
 					
 						<Typography variant='h4'>{item.title}</Typography>
