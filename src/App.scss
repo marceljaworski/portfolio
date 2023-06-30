@@ -75,6 +75,7 @@
 				position: absolute;
 				display: flex;
 				flex-direction: column;
+				width: 200px;
         top: 50px;
         border-top: 1px solid white;
 
@@ -83,11 +84,20 @@
         padding: .5rem;
         background-color: $background-dark;
         transform: translate(-50%);
-			
-				// a{
-				// 	color: $background-dark;
-				// }
 
+				a {
+					margin-bottom: .5rem;
+				}
+				a:last-child {
+					margin-bottom: 0;
+				}
+				.dropdown-icon {
+					position: absolute;
+				}
+				.dropdown-text {
+					margin-left: 1.7rem;
+					line-height: 23px;
+				}
 			}
 
 		}
@@ -115,8 +125,9 @@
 		a.active {
 			color: $yellow;
 		}
-
-		
+		a:hover {
+			color: $white;	
+		}	
 	}
 
 	.main {

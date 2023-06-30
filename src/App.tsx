@@ -9,8 +9,10 @@ import { Theme } from './components/Theme';
 import { AppContext } from './AppContext';
 import { useContext, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-
-
+import HomeIcon from '@mui/icons-material/Home';
+import WorkIcon from '@mui/icons-material/Work';
+import PersonIcon from '@mui/icons-material/Person';
+import { Typography } from '@mui/material';
 
 function App() {
 	const { data, lightMode } = useContext(AppContext);
@@ -34,9 +36,22 @@ function App() {
 					<div className='dropdown'>
 						<MenuIcon className="dropbtn icon"  onClick={handleShow}></MenuIcon>
 						{showMenu &&<div className='dropdown-content' onClick={handleShow}>
-							<NavLink to="/welcome">{data.navText[0]}</NavLink>
-							<NavLink to="/projects">{data.navText[1]}</NavLink>
-							<NavLink to="/about">{data.navText[2]}</NavLink>
+						
+						<NavLink to="/welcome">
+							<HomeIcon className='dropdown-icon' fontSize='small'></HomeIcon>
+							<span className="dropdown-text">{data.navText[0]}</span>
+						</NavLink>
+							
+						<NavLink to="/projects">
+							<WorkIcon className='dropdown-icon' fontSize='small'></WorkIcon>
+							<span className="dropdown-text">{data.navText[1]}</span>
+						</NavLink>
+							
+						<NavLink to="/about">
+							<PersonIcon className='dropdown-icon' fontSize='small'></PersonIcon>
+							<span className="dropdown-text">{data.navText[2]}</span>
+						</NavLink>	
+		
 						</div>}
 					</div>
 				</div>
