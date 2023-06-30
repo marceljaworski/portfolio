@@ -31,16 +31,15 @@ function App() {
 				<div className='nav-icons'>
 					<Theme/>
 					<LanguageChooser/>
+					<div className='dropdown'>
+						<MenuIcon className="dropbtn icon"  onClick={handleShow}></MenuIcon>
+						{showMenu &&<div className='dropdown-content' onClick={handleShow}>
+							<NavLink to="/welcome">{data.navText[0]}</NavLink>
+							<NavLink to="/projects">{data.navText[1]}</NavLink>
+							<NavLink to="/about">{data.navText[2]}</NavLink>
+						</div>}
+					</div>
 				</div>
-				<div className='dropdown'>
-				<MenuIcon className="dropbtn icon"  onClick={handleShow}></MenuIcon>
-					{showMenu &&<div className='dropdown-content' onClick={handleShow}>
-						<NavLink to="/welcome">{data.navText[0]}</NavLink>
-						<NavLink to="/projects">{data.navText[1]}</NavLink>
-						<NavLink to="/about">{data.navText[2]}</NavLink>
-					</div>}
-				</div>
-			
 			</nav>
 
 			<Routes>

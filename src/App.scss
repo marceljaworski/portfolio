@@ -103,6 +103,11 @@
 			display: flex;
 			justify-content: space-around;
 		}
+		@media screen and (max-width: 1080px) {
+			.nav-icons {
+				width: 30%;
+			}
+		}
 		.icon {
 			color: $primary;
 		}
