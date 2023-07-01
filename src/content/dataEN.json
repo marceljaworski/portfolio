@@ -1,13 +1,97 @@
 {
     "navText": ["Welcome", "Projects", "About me"],
     "pageAbout": {
-        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "If you click on Looking for a web developer that combines audiovisual experience with strong technical skills, I'm here to help you take your company's online presence to the next level. Together we can create a digital experience that leaves a lasting impression.", "Finally, I would like to mention that my hobby of juggling has nothing to do with programming, but it helps me to develop my focus, coordination, discipline, adaptability and Enhance creativity in problem solving."]
+        "developer": "Junior web and software developer",
+        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "Together we can create a digital experience that leaves a lasting impression.", "Finally, I would like to mention that my hobby of juggling has nothing to do with programming, but it helps me to develop my focus, coordination, discipline, adaptability and Enhance creativity in problem solving."]
     },
     "pageProjects": {
         "paragraph": "Here you will find links to examples of my practice and work as a web developer.",
-        "chatGpt": { 
-            "text": "Using the powerful OpenAI API, I've developed an application called ChatGPT Clone. This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions. I've implemented a responsive user interface that resembles the original ChatGPT. For the frontend, I used React and Vite, a JavaScript framework.Furthermore, I deployed the server backend separately on the OnRender platform.On the OnRender platform, the server backend manages user queries and those via the OpenAI API received responses. As a registered user at OpenAI, I store my personal API key securely and confidentially on this server. This modular architecture, in which the server backend and the frontend are provided separately on the OnRender platform, ensures secure and scalable operation by ChatGPT Clone and provides users with a smooth and interactive chat experience."
+        "projects":[ 
+            { 
+            "description": "I've implemented a responsive user interface that resembles the original ChatGPT. ",
+            "title": "ChatGPT Clone",
+            "stack": "React(Vite), Express.js, OpenAI Api",
+            "features": "This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions.",
+            "link": "https://chat-gpt-clone-mj6c.onrender.com/",
+            "date": "May 12, 2023"
+        },
+            { 
+            "description": "Final project",
+            "title": "Event Planner",
+            "stack": "React(Vite), Auth0, Firebase, SendGrid, SWR, Stripe, Express, MongoDB, Mongoose.",
+            "features": "Real-Live Chat, Admins Dashboard to control the Data, Auth0, Online payment",
+            "link": "https://event.ella-rotari.com/",
+            "date": "April 04, 2023"
+        },
+        
+        { 
+            "description": "A trivia game that tests the user on the most important terms that every website developer needs to know.",
+            "title": "Web Developer Glossary",
+            "stack": "React(Vite), TypeScript, localStorage",
+            "features": "the user can see the terms, show meanings. Manage terms by adding new terms using a form or removing learned terms.",
+            "link": "https://glossary-marceljaworski.vercel.app/",
+            "date": "December 12, 2022"
+        },
+        { 
+            "description": "",
+            "title": "Online-Shop",
+            "stack": "Angular, Tailwind CSS, Stripe",
+            "features": "As a user, I can filter the items by category and add them to the shopping cart. In the shopping cart I can see, add and remove the selected products. I can complete payment for my order through Stripe.",
+            "link": "https://angular-online-shop.vercel.app/",
+            "date": "May 04, 2023"
+        },
+        { 
+            "description": "",
+            "title": "Bored APP API",
+            "stack": "React(Vite), localStorage",
+            "features": "",
+            "link": "https://bored-api-marceljaworski.vercel.app/",
+            "date": "May 04, 2023"
+        },
+        { 
+            "description": "programming exercise",
+            "title": "Stop Watch",
+            "stack": "JavaScript, CSS",
+            "features": "The user can record each lap. The shortest time will be displayed in green and the longest time in red.",
+            "link": "https://stopwatch-jsx.netlify.app/",
+            "date": "May 04, 2023"
+        },
+        { 
+            "description": "programming exercise, learning Angular",
+            "title": "Tic tac toe",
+            "stack": "Angular, TypeScript, CSS",
+            "features": "",
+            "link": "https://tic-tac-toe-marceljaworski.vercel.app/",
+            "date": "May 09, 2023"
+        },
+        { 
+            "description": "programming exercise, learning Angular",
+            "title": "Calculator",
+            "stack": "React, CSS",
+            "features": "",
+            "link": "https://jsxcalculator.netlify.app/",
+            "date": "May 09, 2023"
+        },
+        { 
+            "description": "My first personal Website!",
+            "title": "Personal Website",
+            "stack": "HTML, SASS",
+            "features": "",
+            "link": "https://marceljaworski.github.io/marceljaworski/",
+            "date": "May 09, 2023"
+        },
+        { 
+            "description": "Programming exercise to learn Bootstrap",
+            "title": "Responsive Bootstrap Website",
+            "stack": "HTML, CSS, Bootstrap",
+            "features": "",
+            "link": "https://marceljaworski.github.io/Responsive-Bootstrap-Webseite/",
+            "date": "Jun 09, 2022"
         }
+
+
+        ]
+        
     },
     "pageWelcome": {
         "posts": [ 

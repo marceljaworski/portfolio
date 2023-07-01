@@ -1,0 +1,22 @@
+.languageContainer {
+    display: inline-block;
+    right: .5rem;
+    bottom: .1rem;
+    z-index: 300;
+
+    .dropdown-language {
+        position: absolute;
+        width: 250px;
+        line-height: 22px;
+        color: $gray1;
+        top: 50px;
+        border-top: 1px solid white;
+
+
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        padding: .5rem;
+        background-color: $gray3;
+        transform: translate(-80%);
+    }
+}
