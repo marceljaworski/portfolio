@@ -8,10 +8,10 @@
         "paragraph": "Here you will find links to examples of my practice and work as a web developer.",
         "projects":[ 
             { 
-            "description": "I've implemented a responsive user interface that resembles the original ChatGPT. ",
+            "description": "This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions.",
             "title": "ChatGPT Clone",
             "stack": "React(Vite), Express.js, OpenAI Api",
-            "features": "This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions.",
+            "features": "I've implemented a responsive user interface that resembles the original ChatGPT. ",
             "link": "https://chat-gpt-clone-mj6c.onrender.com/",
             "date": "May 12, 2023"
         },
@@ -19,7 +19,7 @@
             "description": "Final project",
             "title": "Event Planner",
             "stack": "React(Vite), Auth0, Firebase, SendGrid, SWR, Stripe, Express, MongoDB, Mongoose.",
-            "features": "Real-Live Chat, Admins Dashboard to control the Data, Auth0, Online payment",
+            "features": "Real-Live Chat, Admins Dashboard to control the Data, Online payment",
             "link": "https://event.ella-rotari.com/",
             "date": "April 04, 2023"
         },
@@ -31,6 +31,7 @@
             "features": "the user can see the terms, show meanings. Manage terms by adding new terms using a form or removing learned terms.",
             "link": "https://glossary-marceljaworski.vercel.app/",
             "date": "December 12, 2022"
+            
         },
         { 
             "description": "",
@@ -42,9 +43,9 @@
         },
         { 
             "description": "",
-            "title": "Bored APP API",
-            "stack": "React(Vite), localStorage",
-            "features": "",
+            "title": "Bored App",
+            "stack": "Vite, Axios, useContext, localStorage",
+            "features": "It's an app that shows suggestions for weekend activities. For this project I used boredapi.com/documentation to filter the queries offered using a search form.",
             "link": "https://bored-api-marceljaworski.vercel.app/",
             "date": "May 04, 2023"
         },
@@ -60,31 +61,31 @@
             "description": "programming exercise, learning Angular",
             "title": "Tic tac toe",
             "stack": "Angular, TypeScript, CSS",
-            "features": "",
+            "features": "Programming exercise to learn Angular",
             "link": "https://tic-tac-toe-marceljaworski.vercel.app/",
             "date": "May 09, 2023"
         },
         { 
-            "description": "programming exercise, learning Angular",
+            "description": "",
             "title": "Calculator",
-            "stack": "React, CSS",
-            "features": "",
+            "stack": "CSS React",
+            "features": "Basic calculator",
             "link": "https://jsxcalculator.netlify.app/",
             "date": "May 09, 2023"
         },
         { 
-            "description": "My first personal Website!",
-            "title": "Personal Website",
-            "stack": "HTML, SASS",
-            "features": "",
+            "description": "",
+            "title": "Marcel's website",
+            "stack": "HTML, CSS/SASS, Bootstrap",
+            "features": "My first personal website!",
             "link": "https://marceljaworski.github.io/marceljaworski/",
             "date": "May 09, 2023"
         },
         { 
-            "description": "Programming exercise to learn Bootstrap",
+            "description": "",
             "title": "Responsive Bootstrap Website",
             "stack": "HTML, CSS, Bootstrap",
-            "features": "",
+            "features": "Programming exercise to learn Bootstrap",
             "link": "https://marceljaworski.github.io/Responsive-Bootstrap-Webseite/",
             "date": "Jun 09, 2022"
         }
