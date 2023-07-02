@@ -1,8 +1,9 @@
 import './PageProjects.scss';
-import { CardContent, Typography, CardHeader, Avatar} from '@mui/material';
+import { Typography } from '@mui/material';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
-import { orange } from '@mui/material/colors';
+import boredapp from '../images/profil-bild.jpg';
+
 
 interface project {
 	title: string,
@@ -10,40 +11,32 @@ interface project {
 	stack: string,
 	features: string,
 	link: string,
-	date: string
+	date: string,
+	image: string
 }
 
 export const PageProjects = () => {
 	const { data } = useContext(AppContext);
+
+
 	return (
 		<div className="main main-projects">
 			{/* <p>{data.pageProjects.paragraph}</p> */}
-				{data.pageProjects.projects.map((item: project) =>
-					<div className='card'>
-					<CardHeader
-						avatar={
-							<Avatar sx={{ bgcolor: orange[500]}}>E</Avatar>
-						}
-						title={item.title}
-						subheader={item.date}
-						
-					/>
-
-					<CardContent>
-					
-						 <a href={item.link} target="blank"><Typography className='card-link'>{item.link}</Typography></a>
+				{/* {data.pageProjects.projects.map((item: project) => */}
+				<div className='card'>
+					<img className='card-image' src={boredapp} alt="" />
 
 					
-						<Typography variant='h4'>{item.title}</Typography>
-						<Typography variant='h6'>Stack</Typography>
+					<Typography variant='h4' component="div">{data.pageProjects.projects[0].title}</Typography>
+					
 						
-						<Typography>{item.stack}</Typography>
-						<Typography variant='h6'>Features</Typography>
+					<Typography variant='subtitle1'className='stack'>{data.pageProjects.projects[0].stack}</Typography>
 						
-						<Typography>{item.features}</Typography>
-					</CardContent>
+					<Typography variant='body1'>{data.pageProjects.projects[0].features}</Typography>
+					<a href={data.pageProjects.projects[0].link} target="blank"><button>Visit</button></a>
+				
 				</div>
-				)}
+				{/* )} */}
 			
 		</div>
 	);
