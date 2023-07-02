@@ -31,13 +31,16 @@ export const PageProjects = () => {
 	return (
 		<div className="main">
 			<Typography>{data.pageProjects.paragraph}</Typography>
-			<div className='main-projects'>
+		<div className='main-projects'>
 			<div className='card'>
-				<img className='card-image' src={gpt} alt="" />
-				<Typography variant='h4' component="div">{data.pageProjects.projects[0].title}</Typography>
-				<Typography variant='subtitle1'className='stack'>{data.pageProjects.projects[0].stack}</Typography>
-				<Typography variant='body1'>{data.pageProjects.projects[0].features}</Typography>
-				<a href={data.pageProjects.projects[0].link} target="blank"><button>Visit</button></a>
+				<img className='card-image' src={gpt} alt="chat gpt" />
+				
+					<Typography variant='h4' component="div">{data.pageProjects.projects[0].title}</Typography>
+					<Typography variant='subtitle1'className='stack'>{data.pageProjects.projects[0].stack}</Typography>
+					<Typography variant='body1'>{data.pageProjects.projects[0].features}</Typography>
+					<a href={data.pageProjects.projects[0].link} target="blank"><button>Visit</button></a>
+			
+				
 			</div>
 			<div className='card'>
 				<img className='card-image' src={eventplanner} alt="" />
