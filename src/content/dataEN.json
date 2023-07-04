@@ -1,5 +1,6 @@
 {
     "navText": ["Welcome", "Projects", "About me"],
+
     "pageAbout": {
         "developer": "Junior web and software developer",
         "about": "About",
@@ -97,6 +98,8 @@
         
     },
     "pageWelcome": {
+        "welcome": "Welcome",
+        "welcomeText": " to my portfolio page",
         "posts": [ 
             { 
                 "title": "How do I create this page?", 

@@ -93,6 +93,8 @@
         ]
     },
     "pageWelcome": {
+        "welcome": "Willkomeen ",
+        "welcomeText": " auf meiner Portfolio-Seite",
         "posts": [ 
             { 
                 "title": "Wie ich diese Seite erstelle", 

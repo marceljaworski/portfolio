@@ -9,7 +9,9 @@ export const PageWelcome= () => {
     const { data } = useContext(AppContext);
     
 	return (
-		<>
+		<>  
+            <Typography variant='h3' className='disp-bloq'>{data.pageWelcome.welcome}</Typography>
+            {/* <Typography className='disp-bloq'>{data.pageWelcome.welcomeText}</Typography> */}
             <header className='header-welcome'>
                 <section className="main-programer__text-container--escaped">
                         <p className="main-programer__text--escaped">

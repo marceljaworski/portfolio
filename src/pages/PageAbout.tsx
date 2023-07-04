@@ -1,4 +1,5 @@
 import avatar from "../images/profil-bild.jpg";
+import './PageAbout.scss';
 // import github from "../images/github-142-svgrepo-com.svg";
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
@@ -29,7 +30,7 @@ export const PageAbout = () => {
 					</div>
 				</header>
 				<article>
-					<Typography variant="h3">About</Typography>
+					<Typography variant="h3">{data.pageAbout.about}</Typography>
 				
 					{data.pageAbout.paragraph.map((el: any, i:any) => {
 						return (
