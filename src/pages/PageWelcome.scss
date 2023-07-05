@@ -85,10 +85,10 @@
     color: $red;
 }
 .class{
-    color: $class;
+    color: $green;
 }
 .wert{
-    color: $wert;
+    color: $yellow;
 }
 .commentar{
     color: $green;
@@ -127,4 +127,13 @@
 }
 .logo:nth-child(5) {
     transition-delay: 1200ms;
+}
+
+.button-navigate{
+    margin-left: 30% !important;
+}
+
+hr {
+    max-width: 80%;
+    margin: auto;
 }
