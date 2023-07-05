@@ -1,12 +1,17 @@
 import './PageWelcome.scss';
+import { useNavigate } from "react-router-dom";
 import { Post } from '../components/Post';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 
 export const PageWelcome= () => {
     const { data } = useContext(AppContext);
+    const navigate = useNavigate();
+    function handleNavigate() {
+        navigate("/projects")
+    }
     
 	return (
 		<>  
@@ -38,6 +43,8 @@ export const PageWelcome= () => {
                     </p>
                 </section>
             </header>
+            <Button variant="outlined" onClick={handleNavigate}>Go to Projects</Button>
+            <Typography className='main-projects-intro'>{data.pageWelcome.paragraph}</Typography>
             <Typography variant='h3' className='page-title'>{data.pageWelcome.welcome}</Typography>
             {data.pageWelcome.posts.map((el: any, i: number) => {
                 
