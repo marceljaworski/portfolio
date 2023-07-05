@@ -1,5 +1,5 @@
 import './PageProjects.scss';
-import { Typography, textFieldClasses } from '@mui/material';
+import { Typography } from '@mui/material';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
 import gpt from '../images/gpt.png';

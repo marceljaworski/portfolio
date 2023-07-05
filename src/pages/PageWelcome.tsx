@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Post } from '../components/Post';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Color } from '@mui/material';
 
 
 export const PageWelcome= () => {
@@ -43,15 +43,20 @@ export const PageWelcome= () => {
                     </p>
                 </section>
             </header>
-            <Button variant="outlined" onClick={handleNavigate}>Go to Projects</Button>
-            <Typography className='main-projects-intro'>{data.pageWelcome.paragraph}</Typography>
-            <Typography variant='h3' className='page-title'>{data.pageWelcome.welcome}</Typography>
+            <div className='main'>
+                <Typography variant='h3' className='page-title'>{data.pageWelcome.welcome}</Typography>
+                <Button variant="outlined" className='button-navigate' onClick={handleNavigate}>{data.pageWelcome.button}</Button>
+                <Typography className='main-projects-intro'>{data.pageWelcome.paragraph}</Typography>
+
+
+            <hr />
             {data.pageWelcome.posts.map((el: any, i: number) => {
                 
-				return (
+                return (
                     <Post post={el} key={i}/>   
-				)
-			})}
+                    )
+                })}
+            </div>
 		</>
 	);
 };

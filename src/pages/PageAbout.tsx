@@ -26,7 +26,7 @@ export const PageAbout = () => {
 						<span>GitHub</span>
 						</a>
 					</div> */}
-					<Typography className='page-title' variant="h4">{data.pageAbout.about}</Typography>
+					<Typography className='page-title' variant="h3">{data.pageAbout.about}</Typography>
 				</div>
 			</header>
 			<article>
