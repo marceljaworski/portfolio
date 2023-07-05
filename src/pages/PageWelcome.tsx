@@ -1,15 +1,22 @@
 import './PageWelcome.scss';
+import { useNavigate } from "react-router-dom";
 import { Post } from '../components/Post';
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
-import { Typography } from '@mui/material';
+import { Button, Typography, Color } from '@mui/material';
 
 
 export const PageWelcome= () => {
     const { data } = useContext(AppContext);
+    const navigate = useNavigate();
+    function handleNavigate() {
+        navigate("/projects")
+    }
     
 	return (
-		<>
+		<>  
+            
+            {/* <Typography className='disp-bloq'>{data.pageWelcome.welcomeText}</Typography> */}
             <header className='header-welcome'>
                 <section className="main-programer__text-container--escaped">
                         <p className="main-programer__text--escaped">
@@ -36,12 +43,20 @@ export const PageWelcome= () => {
                     </p>
                 </section>
             </header>
+            <div className='main'>
+                <Typography variant='h3' className='page-title'>{data.pageWelcome.welcome}</Typography>
+                <Button variant="outlined" className='button-navigate' onClick={handleNavigate}>{data.pageWelcome.button}</Button>
+                <Typography className='main-projects-intro'>{data.pageWelcome.paragraph}</Typography>
+
+
+            <hr />
             {data.pageWelcome.posts.map((el: any, i: number) => {
                 
-				return (
+                return (
                     <Post post={el} key={i}/>   
-				)
-			})}
+                    )
+                })}
+            </div>
 		</>
 	);
 };

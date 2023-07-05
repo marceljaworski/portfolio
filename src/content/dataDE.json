@@ -1,11 +1,30 @@
 {
     "navText": [ "Willkommen", "Projekte", "Über mich"],
-    "pageAbout": {
-        "developer": "Junior Web- Softwareentwickler",
-        "paragraph": ["Hallo, ich bin Marcel Jaworski, Webentwickler mit einem Hochschulabschluss in Medienwissenschaften und Erfahrung in Fotografie, Bildbearbeitung und Marketing. Dadurch habe ich ein tiefes Verständnis für visuelle Ästhetik, das Erzählen von Geschichten und das Erzeugen von Emotionen.", "All diese Fähigkeiten ermöglichen es mir, visuell ansprechende und hochfunktionale Websites zu gestalten. Mit meinen technischen Kenntnissen in Programmiersprachen wie HTML, CSS und JavaScript setze ich Ihre Ideen in attraktive, intuitive und responsive Websites um.", "Mein Ansatz basiert darauf, Ihre spezifischen Bedürfnisse zu verstehen und diese in eine effektive Online-Präsenz umzusetzen. Von der Planung und Konzeption bis hin zur Entwicklung und Implementierung arbeite ich mit Ihnen zusammen, um sicherzustellen, dass Ihre Website Ihre Vision widerspiegelt und eine sinnvolle Verbindung zu Ihrem Publikum herstellt.", " Gemeinsam können wir ein digitales Erlebnis schaffen, das einen bleibenden Eindruck hinterlässt.", "Abschließend möchte ich noch erwähnen, dass mein Hobby, das Jonglieren, nichts mit Programmierung zu tun hat, mir jedoch hilft, meine Konzentration, Koordination, Disziplin, Anpassungsfähigkeit und Kreativität bei der Lösung von Problemen zu verbessern."]
+
+    "pageWelcome": {
+        "welcome": "Willkomeen",
+        "welcomeText": " auf meiner Portfolio-Seite",
+        "button": "zun Projekten",
+        "paragraph": "Hier finden Sie Links zu Beispielen meiner Praxis und Arbeit als Webentwickler",
+        "posts": [ 
+            { 
+                "title": "Wie ich diese Seite erstelle", 
+                "description": "Dies ist eine mit Vite erstellte React-Site mit implementiertem React-Router-Menü.",
+                "steps": [
+                    "gebaut mit Vite",
+                    "React Router menu",
+                    "TypeScript",
+                    "Sass",
+                    "useContext",
+                    "Bereitgestellt auf einer Debian-Maschine in Hetzner mit Nginx/Certbot/pm2"
+                ]
+            }
+        ]
     },
+    
     "pageProjects": {
-        "paragraph": "Hier finden Sie Links zu Beispielen meiner Praxis und Arbeit als Webentwickler.",
+        "project": "Projekte",
+        "visit": "Besuchen",
         "projects":[ 
             { 
                 "description": "Diese Anwendung nutzt künstliche Intelligenz von OpenAI, um interaktive und Echtzeit-Antworten auf Benutzerfragen bereitzustellen.",
@@ -90,20 +109,10 @@
         }
         ]
     },
-    "pageWelcome": {
-        "posts": [ 
-            { 
-                "title": "Wie ich diese Seite erstelle", 
-                "description": "Dies ist eine mit Vite erstellte React-Site mit implementiertem React-Router-Menü.",
-                "steps": [
-                    "gebaut mit Vite",
-                    "React Router menu",
-                    "TypeScript",
-                    "Sass",
-                    "useContext",
-                    "Bereitgestellt auf einer Debian-Maschine in Hetzner mit Nginx/Certbot/pm2"
-                ]
-            }
-        ]
+
+    "pageAbout": {
+        "developer": "Junior Web- Softwareentwickler",
+        "about": "Über mich",
+        "paragraph": ["Hallo, ich bin Marcel Jaworski, Webentwickler mit einem Hochschulabschluss in Medienwissenschaften und Erfahrung in Fotografie, Bildbearbeitung und Marketing. Dadurch habe ich ein tiefes Verständnis für visuelle Ästhetik, das Erzählen von Geschichten und das Erzeugen von Emotionen.", "All diese Fähigkeiten ermöglichen es mir, visuell ansprechende und hochfunktionale Websites zu gestalten. Mit meinen technischen Kenntnissen in Programmiersprachen wie HTML, CSS und JavaScript setze ich Ihre Ideen in attraktive, intuitive und responsive Websites um.", "Mein Ansatz basiert darauf, Ihre spezifischen Bedürfnisse zu verstehen und diese in eine effektive Online-Präsenz umzusetzen. Von der Planung und Konzeption bis hin zur Entwicklung und Implementierung arbeite ich mit Ihnen zusammen, um sicherzustellen, dass Ihre Website Ihre Vision widerspiegelt und eine sinnvolle Verbindung zu Ihrem Publikum herstellt.", " Gemeinsam können wir ein digitales Erlebnis schaffen, das einen bleibenden Eindruck hinterlässt.", "Abschließend möchte ich noch erwähnen, dass mein Hobby, das Jonglieren, nichts mit Programmierung zu tun hat, mir jedoch hilft, meine Konzentration, Koordination, Disziplin, Anpassungsfähigkeit und Kreativität bei der Lösung von Problemen zu verbessern."]
     }
 }

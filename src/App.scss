@@ -14,9 +14,10 @@
 	a {
 		color: $primary;
 	}
+
 	.card {
 		border-radius: 6px;
-		background: #222222;
+		background: $gray4;
 		box-shadow:  7px 7px 14px #1c1c1c,
              -7px -7px 14px #282828;
   }
@@ -30,6 +31,7 @@
 	a {
 		color: $background-dark;
 	}
+
 	.nav a {
 		color: $primary;
 	}
@@ -38,9 +40,22 @@
     box-shadow:  5px 5px 18px #cacaca,
              -5px -5px 18px #f6f6f6;
   }
-	
-	
 }
+
+.page-title {
+	text-align: right;
+}
+
+/* Color googleFonts */
+.foldit {
+	font-family: "Foldit";
+	font-size: xx-large;
+}
+
+.nabla {
+	font-family: "nabla";
+}
+
 
 .App {
 	min-height: 100vh;
@@ -51,12 +66,14 @@
 
 	.nav {
 		width: 100%;
-		height: 50px;
+		height: 70px;
 		background-color: $background-dark;
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
 		position: relative;
+
+		
 		.nav-items {
 			width: 25%;
 			display: flex;
@@ -120,10 +137,15 @@
 		}
 		.icon {
 			color: $primary;
+			cursor: pointer;
+		}
+		.icon:hover {
+			color: $white;
 		}
 		
 		a.active {
 			color: $yellow;
+			
 		}
 		a:hover {
 			color: $white;	
@@ -147,71 +169,6 @@
 	li {
 		padding-bottom: .5rem;
 	}
-
-	.main-about {
-		
-		p {
-			max-width: 700px;
-		}
-		.headerAbout {
-			display: flex;
-			  justify-content: space-between;
-			  align-items: flex-start;
-			.avatar {
-				// height: 150px;
-				width: 30%;
-				max-width: 300px;
-				height: auto;
-				border: 2px solid #333;
-				border-radius: 6px;
-				// aspect-ratio: 1;
-				// object-fit: cover;
-				margin-right: .5rem;
-			}
-			.header-content {
-				width: 100%;
-				padding-left: .5rem;
-			}
-			.contacts a {
-				padding: 4px 8px;
-				background: rgba(255, 255, 255, 0.1);
-				border-radius: 8px;
-				text-decoration: none;
-				font-weight: 500;
-				margin-right: 8px;
-				margin-bottom: 8px;
-				display: inline-flex;
-				font-size: 14px;
-				align-items: center;
-				vertical-align: middle;
-			}
-			.contacts a:hover {
-				background: rgba(255,255,255,0.125);
-			}
-			.contacts a:active {
-				background: rgba(255,255,255,0.075);
-			}
-			.contacts .icon {
-				width: 24px;
-				height: 24px;
-				display: flex;
-				align-items: center;
-				margin-right: 8px;
-			}
-			.contacts img {
-				max-width: 100%;
-				max-height: 100%;
-			}
-		}
-		article {
-			padding-top: .5rem;
-			.about-text {
-				text-align: justify;
-				text-justify: inter-word;
-			}
-		}
-	}
-
 	
 	@media only screen and (min-width: 480px) {
 		h1, h2, h3, a, p {
@@ -222,9 +179,6 @@
 		p {
 			font-size: 1.2rem;
 		}
-		// article {
-		// 	margin: .5rem;
-		// }
 	}
 	.subtitle {
 		margin: 1em 0;

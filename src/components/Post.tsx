@@ -1,3 +1,5 @@
+import './Post.scss';
+
 interface Post {
     title: string;
     description: string;
@@ -11,7 +13,7 @@ interface PostProps {
 export const Post = ({post}:PostProps) => {
     
     return (
-        <article className="main">
+        <article className="main main-post">
             <h2>{post.title}</h2>
             <p>{post.description}</p>
             <ul>

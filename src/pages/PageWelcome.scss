@@ -1,6 +1,7 @@
+
 .header-welcome {
     margin: auto;
-    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+    // clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
 .main-programer__text-container{
     padding: 1rem;
@@ -84,10 +85,10 @@
     color: $red;
 }
 .class{
-    color: $class;
+    color: $green;
 }
 .wert{
-    color: $wert;
+    color: $yellow;
 }
 .commentar{
     color: $green;
@@ -126,4 +127,15 @@
 }
 .logo:nth-child(5) {
     transition-delay: 1200ms;
+}
+
+.button-navigate{
+    margin-top: 1rem !important;
+    margin-left: 30% !important;
+}
+
+hr {
+    max-width: 90%;
+    margin: auto;
+    
 }
