@@ -3,7 +3,7 @@
     "pageWelcome": {
         "welcome": "Welcome",
         "welcomeText": " to my portfolio page",
-        "button": "Go to projects",
+        "button": "to projects",
         "paragraph": "Here you will find links to examples of my practice and work as a web developer",
         "posts": [ 
             { 
