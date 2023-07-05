@@ -31,6 +31,7 @@ export const PageProjects = () => {
 	return (
 		<div className="main">
 			<Typography className='main-projects-intro'>{data.pageProjects.paragraph}</Typography>
+			<Typography variant='h3' className='page-title'>{data.pageProjects.project}</Typography>
 			<div className='main-projects'>
 				<div className='card'>
 					<img className='card-image' src={gpt} alt="chat gpt" />

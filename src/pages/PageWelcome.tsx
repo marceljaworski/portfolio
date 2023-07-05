@@ -10,7 +10,7 @@ export const PageWelcome= () => {
     
 	return (
 		<>  
-            <Typography variant='h3' className='disp-bloq'>{data.pageWelcome.welcome}</Typography>
+            
             {/* <Typography className='disp-bloq'>{data.pageWelcome.welcomeText}</Typography> */}
             <header className='header-welcome'>
                 <section className="main-programer__text-container--escaped">
@@ -38,6 +38,7 @@ export const PageWelcome= () => {
                     </p>
                 </section>
             </header>
+            <Typography variant='h3' className='page-title'>{data.pageWelcome.welcome}</Typography>
             {data.pageWelcome.posts.map((el: any, i: number) => {
                 
 				return (

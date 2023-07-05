@@ -30,7 +30,7 @@ export const PageAbout = () => {
 					</div>
 				</header>
 				<article>
-					<Typography variant="h3">{data.pageAbout.about}</Typography>
+					<Typography className='page-title' variant="h3">{data.pageAbout.about}</Typography>
 				
 					{data.pageAbout.paragraph.map((el: any, i:any) => {
 						return (
