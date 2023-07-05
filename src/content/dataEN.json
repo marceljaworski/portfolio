@@ -1,14 +1,28 @@
 {
     "navText": ["Welcome", "Projects", "About me"],
-
-    "pageAbout": {
-        "developer": "Junior web and software developer",
-        "about": "About",
-        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "Together we can create a digital experience that leaves a lasting impression.", "Finally, I would like to mention that my hobby of juggling has nothing to do with programming, but it helps me to develop my focus, coordination, discipline, adaptability and Enhance creativity in problem solving."]
+    "pageWelcome": {
+        "welcome": "Welcome",
+        "welcomeText": " to my portfolio page",
+        "button": "Go to projects",
+        "paragraph": "Here you will find links to examples of my practice and work as a web developer",
+        "posts": [ 
+            { 
+                "title": "How do I create this page?", 
+                "description": "This is a React site built with Vite with implemented React router menu.",
+                "steps": [
+                    "built with Vite",
+                    "React Router menu",
+                    "TypeScript",
+                    "Sass",
+                    "useContext",
+                    "Deployed to a Debian machine in Hetzner with Nginx/Certbot/pm2"
+                ]
+            }
+        ]
     },
+    
     "pageProjects": {
         "project": "Projects",
-        "paragraph": "Here you will find links to examples of my practice and work as a web developer",
         "visit": "Visit",
         "projects":[ 
             { 
@@ -98,22 +112,10 @@
         ]
         
     },
-    "pageWelcome": {
-        "welcome": "Welcome",
-        "welcomeText": " to my portfolio page",
-        "posts": [ 
-            { 
-                "title": "How do I create this page?", 
-                "description": "This is a React site built with Vite with implemented React router menu.",
-                "steps": [
-                    "built with Vite",
-                    "React Router menu",
-                    "TypeScript",
-                    "Sass",
-                    "useContext",
-                    "Deployed to a Debian machine in Hetzner with Nginx/Certbot/pm2"
-                ]
-            }
-        ]
+    "pageAbout": {
+        "developer": "Junior web and software developer",
+        "about": "About",
+        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "Together we can create a digital experience that leaves a lasting impression.", "Finally, I would like to mention that my hobby of juggling has nothing to do with programming, but it helps me to develop my focus, coordination, discipline, adaptability and Enhance creativity in problem solving."]
     }
+   
 }
