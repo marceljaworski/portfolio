@@ -115,7 +115,12 @@
     "pageAbout": {
         "developer": "Junior web and software developer",
         "about": "About",
-        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "Together we can create a digital experience that leaves a lasting impression.", "Finally, I would like to mention that my hobby of juggling has nothing to do with programming, but it helps me to develop my focus, coordination, discipline, adaptability and Enhance creativity in problem solving."]
+        "paragraph": ["Hello, I'm Marcel Jaworski, web developer with a degree in media studies and experience in photography, image editing and marketing. This gives me a deep understanding of visual aesthetics, storytelling and creating emotions.", "All these skills make possible It is my passion to design visually appealing and highly functional websites. With my technical knowledge of programming languages such as HTML, CSS and JavaScript, I transform your ideas into attractive, intuitive and responsive websites.", "My approach is based on understanding your specific needs and translate that into an effective online presence. From planning and conception to development and implementation, I will work with you to ensure your website reflects your vision and connects meaningfully with your audience.", "Together we can create a digital experience that leaves a lasting impression."]
+    },
+    "contactForm": {
+        "text": "Please leave a message. I will get back to you as soon as possible.",
+        "message": "Message",
+        "submit": "Submit"
     }
    
 }
