@@ -2,9 +2,9 @@
     "navText": [ "Willkommen", "Projekte", "Über mich"],
 
     "pageWelcome": {
-        "welcome": "Willkomeen",
+        "welcome": "Willkommen",
         "welcomeText": " auf meiner Portfolio-Seite",
-        "button": "zun Projekten",
+        "button": "Projekten",
         "paragraph": "Hier finden Sie Links zu Beispielen meiner Praxis und Arbeit als Webentwickler",
         "posts": [ 
             { 
