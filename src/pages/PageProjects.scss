@@ -22,7 +22,9 @@
       object-fit: cover;
       aspect-ratio: 16 / 9;
     }
- 
+    .stack {
+      color: $yellow;
+    }
     button {
       position: absolute;
       left: 0;
