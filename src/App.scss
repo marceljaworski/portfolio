@@ -143,13 +143,13 @@
 			color: $white;
 		}
 		
-		a.active {
+		a.active, a:hover {
 			color: $yellow;
 			
 		}
-		a:hover {
-			color: $white;	
-		}	
+		// a:hover {
+		// 	color: $white;	
+		// }	
 	}
 
 	.main {
