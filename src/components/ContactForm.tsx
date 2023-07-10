@@ -3,39 +3,50 @@ import './ContactForm.scss';
 import { useForm, ValidationError } from '@formspree/react';
 import { Button, Typography } from "@mui/material";
 import { AppContext } from '../AppContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 export const ContactForm = () => {
   const { data } = useContext(AppContext);
+  const [showForm, setShowForm] = useState(false);
+
+  const handleShowForm = () => {
+		setShowForm(!showForm)
+	}
   const [state, handleSubmit] = useForm('xrgwgerv');
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>{data.contactForm.thanks}</p>;
   }
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <Typography>{data.contactForm.text}</Typography>
-      <TextField id="email" label="Email" name="email" type="email" variant="outlined" />
-      <ValidationError 
-        
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
-      <TextField
-          id="message"
-          label={data.contactForm.message}
-          name="message"
-          multiline
-          maxRows={4}
+    <>
+      <Button className='contact-button' variant="contained" color="success" onClick={handleShowForm}>Contact me</Button>
+      {showForm && <form className="form" onSubmit={handleSubmit}>
+        <Typography>{data.contactForm.text}</Typography>
+        <TextField id="email" label="Email" name="email" type="email" variant="outlined" />
+        <ValidationError 
+          
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
         />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
-      <Button variant="contained" type="submit" disabled={state.submitting}>
-        {data.contactForm.submit}
-      </Button>
-    </form>
+        <TextField
+            id="message"
+            label={data.contactForm.message}
+            name="message"
+            multiline
+            maxRows={4}
+          />
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+        />
+        <Button variant="contained" type="submit" disabled={state.submitting}>
+          {data.contactForm.submit}
+        </Button>
+        <Button variant="outlined" color='error' onClick={handleShowForm}>
+          {data.contactForm.close}
+        </Button>
+      </form>}
+    </>
   )
 }

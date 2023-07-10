@@ -12,15 +12,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import WorkIcon from '@mui/icons-material/Work';
 import PersonIcon from '@mui/icons-material/Person';
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
+import { ContactForm } from './components/ContactForm';
 
 function App() {
 	const { data, lightMode } = useContext(AppContext);
 	const [showMenu, setShowMenu] = useState(false);
+	
 	const handleShow = () => {
 		setShowMenu(!showMenu)
-}
-
+	};
+	
 	return (
 		<div className={"App "+ (lightMode ? 'light' : 'dark')}>
 			<nav className='nav'>
@@ -56,7 +58,7 @@ function App() {
 					</div>
 				</div>
 			</nav>
-
+			<ContactForm />
 			<Routes>
 
 				<Route path="/" element={<Navigate to="/welcome" replace />} />
@@ -65,6 +67,8 @@ function App() {
 				<Route path="/about" element={<PageAbout />} />
 				<Route path="*" element={ <Page404 /> } />
 			</Routes>
+			
+			
 		</div>
 	);
 }
