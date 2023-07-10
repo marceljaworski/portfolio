@@ -43,10 +43,10 @@
         },
         
         { 
-            "description": "A trivia game that tests the user on the most important terms that every website developer needs to know.",
+            "description": "The user can see the terms, show meanings. Manage terms by adding new terms using a form or removing learned terms.",
             "title": "Web Developer Glossary",
             "stack": "React(Vite), TypeScript, localStorage",
-            "features": "the user can see the terms, show meanings. Manage terms by adding new terms using a form or removing learned terms.",
+            "features": "A trivia game that tests the user on the most important terms that every website developer needs to know.",
             "link": "https://glossary-marceljaworski.vercel.app/",
             "date": "December 12, 2022"
             
@@ -120,7 +120,9 @@
     "contactForm": {
         "text": "Please leave a message. I will get back to you as soon as possible.",
         "message": "Message",
-        "submit": "Submit"
+        "submit": "Submit",
+        "close": "Close",
+        "thanks": "thanks for your message!"
     }
    
 }

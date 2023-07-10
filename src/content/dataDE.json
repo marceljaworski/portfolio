@@ -44,10 +44,10 @@
             },
           
             { 
-                "description": "Ein Quizspiel, das den Benutzer auf die wichtigsten Begriffe testet, die jeder Website-Entwickler kennen muss.",
+                "description": "Der Benutzer kann die Begriffe sehen und Bedeutungen anzeigen. Verwalten Sie Begriffe, indem Sie über ein Formular neue Begriffe hinzufügen oder erlernte Begriffe entfernen.",
                 "title": "Web Developer Glossary",
                 "stack": "React(Vite), TypeScript, localStorage",
-                "features": "Der Benutzer kann die Begriffe sehen und Bedeutungen anzeigen. Verwalten Sie Begriffe, indem Sie über ein Formular neue Begriffe hinzufügen oder erlernte Begriffe entfernen.",
+                "features": "Ein Quizspiel, das den Benutzer auf die wichtigsten Begriffe testet, die jeder Website-Entwickler kennen muss.",
                 "link": "https://glossary-marceljaworski.vercel.app/",
                 "date": "December 12, 2022"
             },
@@ -118,6 +118,8 @@
     "contactForm": {
         "text": "Bitte hinterlassen Sie eine Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden.",
         "message": "Nachricht",
-        "submit": "Einreichen"
+        "submit": "Einreichen",
+        "close": "Schließen",
+        "thanks": "Danke für deine Nachricht!"
     }
 }
