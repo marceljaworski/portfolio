@@ -9,9 +9,9 @@ import { Theme } from './components/Theme';
 import { AppContext } from './AppContext';
 import { useContext, useState } from 'react';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
-import HomeIcon from '@mui/icons-material/Home';
-import WorkIcon from '@mui/icons-material/Work';
-import PersonIcon from '@mui/icons-material/Person';
+import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
+import WorkTwoToneIcon from '@mui/icons-material/WorkTwoTone';
+import PersonOutlineTwoToneIcon from '@mui/icons-material/PersonOutlineTwoTone';
 import { ContactForm } from './components/ContactForm';
 
 function App() {
@@ -41,17 +41,17 @@ function App() {
 						{showMenu &&<div className='dropdown-content' onClick={handleShow}>
 						
 						<NavLink to="/welcome">
-							<HomeIcon className='dropdown-icon' fontSize='small'></HomeIcon>
+							<HomeTwoToneIcon className='dropdown-icon' fontSize='small'></HomeTwoToneIcon>
 							<span className="dropdown-text">{data.navText[0]}</span>
 						</NavLink>
 							
 						<NavLink to="/projects">
-							<WorkIcon className='dropdown-icon' fontSize='small'></WorkIcon>
+							<WorkTwoToneIcon className='dropdown-icon' fontSize='small'></WorkTwoToneIcon>
 							<span className="dropdown-text">{data.navText[1]}</span>
 						</NavLink>
 							
 						<NavLink to="/about">
-							<PersonIcon className='dropdown-icon' fontSize='small'></PersonIcon>
+							<PersonOutlineTwoToneIcon className='dropdown-icon' fontSize='small'></PersonOutlineTwoToneIcon>
 							<span className="dropdown-text">{data.navText[2]}</span>
 						</NavLink>	
 		
