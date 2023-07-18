@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Themes */
@@ -42,9 +42,6 @@
   }
 }
 
-.page-title {
-	text-align: right;
-}
 
 /* Color googleFonts */
 .foldit {
@@ -88,7 +85,6 @@
 		.dropdown {
 			z-index: 3;
 			.dropdown-content {
-				
 				position: absolute;
 				display: flex;
 				flex-direction: column;
@@ -147,15 +143,16 @@
 			color: $yellow;
 			
 		}
-		// a:hover {
-		// 	color: $white;	
-		// }	
 	}
 
 	.main {
 		padding: 1rem;
 	}
-		
+	
+	.page-title {
+		text-align: center;
+	}
+	
 	ul {
 		display: block;
 		list-style-type: disc;

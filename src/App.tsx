@@ -8,11 +8,10 @@ import { LanguageChooser } from './components/LanguageChooser';
 import { Theme } from './components/Theme';
 import { AppContext } from './AppContext';
 import { useContext, useState } from 'react';
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import HomeIcon from '@mui/icons-material/Home';
 import WorkIcon from '@mui/icons-material/Work';
 import PersonIcon from '@mui/icons-material/Person';
-import { Button, Typography } from '@mui/material';
 import { ContactForm } from './components/ContactForm';
 
 function App() {
@@ -35,8 +34,10 @@ function App() {
 				<div className='nav-icons'>
 					<Theme/>
 					<LanguageChooser/>
+					<ContactForm />
+
 					<div className='dropdown'>
-						<MenuIcon className="dropbtn icon"  onClick={handleShow}></MenuIcon>
+						<MenuTwoToneIcon fontSize='medium' className="dropbtn icon"  onClick={handleShow}></MenuTwoToneIcon>
 						{showMenu &&<div className='dropdown-content' onClick={handleShow}>
 						
 						<NavLink to="/welcome">
@@ -58,7 +59,7 @@ function App() {
 					</div>
 				</div>
 			</nav>
-			<ContactForm />
+			
 			<Routes>
 
 				<Route path="/" element={<Navigate to="/welcome" replace />} />
