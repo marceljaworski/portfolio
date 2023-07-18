@@ -16,6 +16,7 @@
     "@codersrank/activity": "^0.9.14",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@formspree/react": "^2.4.4",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.3",
     "react": "^18.2.0",

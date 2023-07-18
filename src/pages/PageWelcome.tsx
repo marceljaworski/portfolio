@@ -47,8 +47,6 @@ export const PageWelcome= () => {
                 <Typography variant='h3' className='page-title'>{data.pageWelcome.welcome}</Typography>
                 <Button variant="outlined" className='button-navigate' onClick={handleNavigate}>{data.pageWelcome.button}</Button>
                 <Typography className='main-projects-intro'>{data.pageWelcome.paragraph}</Typography>
-
-
             <hr />
             {data.pageWelcome.posts.map((el: any, i: number) => {
                 

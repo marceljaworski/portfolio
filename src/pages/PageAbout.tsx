@@ -1,5 +1,6 @@
-import avatar from "../images/profil-bild.jpg";
+import avatar from '../images/profil-bild.jpg';
 import './PageAbout.scss';
+
 // import github from "../images/github-142-svgrepo-com.svg";
 import { AppContext } from '../AppContext';
 import { useContext } from 'react';
@@ -7,8 +8,10 @@ import { Typography } from "@mui/material";
 
 export const PageAbout = () => {
 	const { data } = useContext(AppContext);
+
 	return (
 		<div className="main main-about">
+			
 			<header className="headerAbout">
 			
 				<img src={avatar} alt="Avatar" className="avatar"></img>

@@ -8,19 +8,48 @@
   flex-wrap: wrap;
   .card {
     max-width: 350px;
-    height: 510px;
+    // height: 510px;
     margin: 1rem;
-    border-radius: 5px;
+    border-radius: 16px;
     text-align: center;
-    // white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    position: relative;
+    background: $background-dark;
+    box-shadow:  -1rem 0 3rem #000;
+    
       
     img {
       width: 100%;
       object-fit: cover;
       aspect-ratio: 16 / 9;
+      border-radius: 16px 16px 0 0;
+    }
+    .tags {
+      margin: 1rem 0 2rem;
+      padding: .5rem 0 1rem;
+      line-height: 2;
+      margin-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+      a {
+        font-style: normal;
+        font-weight: 700;
+        color: #7a7a8c;
+        text-transform: uppercase;
+        font-size: .6rem;
+        border: 3px solid #28242f;
+        border-radius: 2rem;
+        padding: .2rem .85rem .25rem;
+        margin: .2rem .2rem;
+      }
+      a:hover {
+        background: linear-gradient(90deg,#ff8a00,#e52e71);
+        text-shadow: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        border: 1px solid white;
+      }
     }
  
     button {

@@ -29,7 +29,7 @@
             { 
                 "description": "Diese Anwendung nutzt künstliche Intelligenz von OpenAI, um interaktive und Echtzeit-Antworten auf Benutzerfragen bereitzustellen.",
                 "title": "ChatGPT Clone",
-                "stack": "React(Vite), Express.js, render.com, OpenAI Api",
+                "stack": ["React(Vite)", "Express.js", "Open_AI-Api"],
                 "features": "Ich habe eine reaktionsfähige Benutzeroberfläche implementiert, die dem ursprünglichen ChatGPT ähnelt.",
                 "link": "https://chat-gpt-clone-mj6c.onrender.com/",
                 "date": "May 12, 2023"
@@ -37,24 +37,24 @@
             { 
                 "description": "Final project",
                 "title": "Event Planner",
-                "stack": "React(Vite), Auth0, Firebase, Stripe, Express, MongoDB, Mongoose.",
+                "stack": ["React(Vite)", "Auth0", "Firebase", "Stripe", "Express", "MongoDB", "Mongoose"],
                 "features": "Real-Live Chat, Admins Dashboard to control the Data, Online payment",
                 "link": "https://event.ella-rotari.com/",
                 "date": "April 04, 2023"
             },
           
             { 
-                "description": "Ein Quizspiel, das den Benutzer auf die wichtigsten Begriffe testet, die jeder Website-Entwickler kennen muss.",
+                "description": "Der Benutzer kann die Begriffe sehen und Bedeutungen anzeigen. Verwalten Sie Begriffe, indem Sie über ein Formular neue Begriffe hinzufügen oder erlernte Begriffe entfernen.",
                 "title": "Web Developer Glossary",
-                "stack": "React(Vite), TypeScript, localStorage",
-                "features": "Der Benutzer kann die Begriffe sehen und Bedeutungen anzeigen. Verwalten Sie Begriffe, indem Sie über ein Formular neue Begriffe hinzufügen oder erlernte Begriffe entfernen.",
+                "stack": ["React(Vite)", "TypeScript", "localStorage"],
+                "features": "Ein Quizspiel, das den Benutzer auf die wichtigsten Begriffe testet, die jeder Website-Entwickler kennen muss.",
                 "link": "https://glossary-marceljaworski.vercel.app/",
                 "date": "December 12, 2022"
             },
             { 
                 "description": "",
                 "title": "Online-Shop",
-                "stack": "Angular, Tailwind CSS, Stripe",
+                "stack": ["Angular" , "Tailwind", "CSS", "Stripe"],
                 "features": "Als Benutzer kann ich Artikel nach Kategorien filtern und in den Warenkorb legen. Im Warenkorb kann ich die ausgewählten Produkte ansehen, hinzufügen und entfernen. Schließlich kann ich meine Bestellung über Stripe bezahlen.",
                 "link": "https://angular-online-shop.vercel.app/",
                 "date": "Mai 04, 2023"
@@ -62,7 +62,7 @@
             { 
             "description": "",
             "title": "Bored App",
-            "stack": "Vite, Axios, useContext, localStorage",
+            "stack": ["Vite", "Axios", "useContext", "localStorage"],
             "features": "Es ist eine App, die Vorschläge für Wochenendaktivitäten zeigt. Für dieses Projekt habe ich boredapi.com/documentation verwendet, um die angebotenen Abfragen mithilfe eines Suchformulars zu filtern.",
             "link": "https://bored-api-marceljaworski.vercel.app/",
             "date": "May 04, 2023"
@@ -70,7 +70,7 @@
         { 
             "description": "programming exercise",
             "title": "Stoppuhr",
-            "stack": "JavaScript, CSS",
+            "stack": ["JavaScript", "CSS"],
             "features": "Der Benutzer kann jede Runde aufzeichnen. Die kürzeste Zeit wird in Grün und die längste Zeit in Rot angezeigt.",
             "link": "https://stopwatch-jsx.netlify.app/",
             "date": "May 04, 2023"
@@ -78,7 +78,7 @@
         { 
             "description": "programming exercise, learning Angular",
             "title": "Tic tac toe",
-            "stack": "Angular, TypeScript, CSS",
+            "stack": ["Angular", "TypeScript", "CSS"],
             "features": "Programmierübung zum Erlernen von Angular",
             "link": "https://tic-tac-toe-marceljaworski.vercel.app/",
             "date": "May 09, 2023"
@@ -86,7 +86,7 @@
         { 
             "description": "",
             "title": "Taschenrechner",
-            "stack": "CSS, React",
+            "stack": ["CSS", "React"],
             "features": "Grundrechner",
             "link": "https://jsxcalculator.netlify.app/",
             "date": "May 09, 2023"
@@ -94,7 +94,7 @@
         { 
             "description": "",
             "title": "Marcels Website",
-            "stack": "HTML, CSS/SASS, Bootstrap",
+            "stack": ["HTML", "CSS/SASS", "Bootstrap"],
             "features": "Meine erste persönliche Website!",
             "link": "https://marceljaworski.github.io/marceljaworski/",
             "date": "May 09, 2023"
@@ -102,7 +102,7 @@
         { 
             "description": "",
             "title": "Responsive Bootstrap Website",
-            "stack": "HTML, CSS, Bootstrap",
+            "stack": ["HTML", "CSS", "Bootstrap"],
             "features": "Programmierübung zum Erlernen von Bootstrap",
             "link": "https://marceljaworski.github.io/Responsive-Bootstrap-Webseite/",
             "date": "Jun 09, 2022"
@@ -113,6 +113,13 @@
     "pageAbout": {
         "developer": "Junior Web- Softwareentwickler",
         "about": "Über mich",
-        "paragraph": ["Hallo, ich bin Marcel Jaworski, Webentwickler mit einem Hochschulabschluss in Medienwissenschaften und Erfahrung in Fotografie, Bildbearbeitung und Marketing. Dadurch habe ich ein tiefes Verständnis für visuelle Ästhetik, das Erzählen von Geschichten und das Erzeugen von Emotionen.", "All diese Fähigkeiten ermöglichen es mir, visuell ansprechende und hochfunktionale Websites zu gestalten. Mit meinen technischen Kenntnissen in Programmiersprachen wie HTML, CSS und JavaScript setze ich Ihre Ideen in attraktive, intuitive und responsive Websites um.", "Mein Ansatz basiert darauf, Ihre spezifischen Bedürfnisse zu verstehen und diese in eine effektive Online-Präsenz umzusetzen. Von der Planung und Konzeption bis hin zur Entwicklung und Implementierung arbeite ich mit Ihnen zusammen, um sicherzustellen, dass Ihre Website Ihre Vision widerspiegelt und eine sinnvolle Verbindung zu Ihrem Publikum herstellt.", " Gemeinsam können wir ein digitales Erlebnis schaffen, das einen bleibenden Eindruck hinterlässt.", "Abschließend möchte ich noch erwähnen, dass mein Hobby, das Jonglieren, nichts mit Programmierung zu tun hat, mir jedoch hilft, meine Konzentration, Koordination, Disziplin, Anpassungsfähigkeit und Kreativität bei der Lösung von Problemen zu verbessern."]
+        "paragraph": ["Hallo, ich bin Marcel Jaworski, Webentwickler mit einem Hochschulabschluss in Medienwissenschaften und Erfahrung in Fotografie, Bildbearbeitung und Marketing. Dadurch habe ich ein tiefes Verständnis für visuelle Ästhetik, das Erzählen von Geschichten und das Erzeugen von Emotionen.", "All diese Fähigkeiten ermöglichen es mir, visuell ansprechende und hochfunktionale Websites zu gestalten. Mit meinen technischen Kenntnissen in Programmiersprachen wie HTML, CSS und JavaScript setze ich Ihre Ideen in attraktive, intuitive und responsive Websites um.", "Mein Ansatz basiert darauf, Ihre spezifischen Bedürfnisse zu verstehen und diese in eine effektive Online-Präsenz umzusetzen. Von der Planung und Konzeption bis hin zur Entwicklung und Implementierung arbeite ich mit Ihnen zusammen, um sicherzustellen, dass Ihre Website Ihre Vision widerspiegelt und eine sinnvolle Verbindung zu Ihrem Publikum herstellt.", " Gemeinsam können wir ein digitales Erlebnis schaffen, das einen bleibenden Eindruck hinterlässt."]
+    },
+    "contactForm": {
+        "text": "Bitte hinterlassen Sie eine Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden.",
+        "message": "Nachricht",
+        "submit": "Einreichen",
+        "close": "Schließen",
+        "thanks": "Danke für deine Nachricht!"
     }
 }
