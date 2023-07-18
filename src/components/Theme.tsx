@@ -14,18 +14,9 @@ export const Theme = () => {
     }
     return (
 
-        <div onClick={handleMode} /*className='has-dropdown'*/>
-            {!lightMode && <LightModeTwoToneIcon className='icon' fontSize='medium' /*href='#'*/ />}
-            {lightMode && <DarkModeTwoToneIcon className='icon' fontSize='small' /*href='#'*/ />}
-            {/* <ul className='dropdown'>
-                <li className='dropdown-item'>
-                    <a id='light' href='#'>light</a>
-                </li>
-                <li className='dropdown-item'>
-                    <a id='dark' href='#'>dark</a>
-                </li>
-
-            </ul> */}
+        <div onClick={handleMode} >
+            {!lightMode && <LightModeTwoToneIcon className='icon' fontSize='medium' />}
+            {lightMode && <DarkModeTwoToneIcon className='icon' fontSize='medium' />}
             
         </div>
     

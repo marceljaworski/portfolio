@@ -4,6 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Button, Typography } from "@mui/material";
 import { AppContext } from '../AppContext';
 import { useContext, useState } from 'react';
+import EmailTwoToneIcon from '@mui/icons-material/EmailTwoTone';
 
 export const ContactForm = () => {
   const { data } = useContext(AppContext);
@@ -18,7 +19,7 @@ export const ContactForm = () => {
   }
   return (
     <>
-      <Button className='contact-button' variant="contained" color="success" onClick={handleShowForm}>Contact me</Button>
+      <EmailTwoToneIcon fontSize='medium' className='icon' color="success" onClick={handleShowForm} />
       {showForm && <form className="form" onSubmit={handleSubmit}>
         <Typography>{data.contactForm.text}</Typography>
         <TextField id="email" label="Email" name="email" type="email" variant="outlined" />
