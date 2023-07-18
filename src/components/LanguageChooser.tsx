@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import { AppContext } from '../AppContext';
-import TranslateIcon from '@mui/icons-material/Translate';
+import LanguageTwoToneIcon from '@mui/icons-material/LanguageTwoTone';
 import './LanguageChooser.scss'
 
 
@@ -21,7 +21,7 @@ export const LanguageChooser = () => {
     return (
 
         <div className='languageContainer'>
-            <TranslateIcon className='icon' onClick={handleShow} fontSize='small'/>
+            <LanguageTwoToneIcon className='icon' onClick={handleShow} fontSize='medium'/>
             {showLanguages && 
                 <div className='dropdown-language'>
                     <label htmlFor="languages">Choose a Language: </label>
