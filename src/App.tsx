@@ -25,7 +25,7 @@ function App() {
 	return (
 		<div className={"App "+ (lightMode ? 'light' : 'dark')}>
 			<nav className='nav'>
-				<NavLink to="/welcome"><h1 className='foldit'>Marcel Jaworski</h1></NavLink>
+				<NavLink to="/welcome"><h1 className='main-title'>Marcel Jaworski</h1></NavLink>
 				<div className='nav-items'>
 					<NavLink to="/welcome">{data.navText[0]}</NavLink>
 					<NavLink to="/projects">{data.navText[1]}</NavLink>

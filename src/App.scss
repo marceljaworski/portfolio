@@ -15,13 +15,6 @@
 		color: $primary;
 	}
 
-	.card {
-		border-radius: 6px;
-		background: $gray4;
-		box-shadow:  7px 7px 14px #1c1c1c,
-             -7px -7px 14px #282828;
-  }
-
 } 
 
 .light {
@@ -35,27 +28,24 @@
 	.nav a {
 		color: $primary;
 	}
-	.card {
-    background: #e0e0e0;
-    box-shadow:  5px 5px 18px #cacaca,
-             -5px -5px 18px #f6f6f6;
-  }
 }
 
 
-/* Color googleFonts */
-.foldit {
+/* Gradient-Title */
+.main-title {
 	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   text-shadow: none;
   background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.nabla {
-	font-family: "nabla";
+a:hover, .icon:hover {
+	background: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  text-shadow: none;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 body::-webkit-scrollbar {
   width: 0.25rem
 }
@@ -154,8 +144,8 @@ body::-webkit-scrollbar-thumb {
 			color: $white;
 		}
 		
-		a.active, a:hover {
-			color: $yellow;
+		a.active {
+			color: white;
 			
 		}
 	}
