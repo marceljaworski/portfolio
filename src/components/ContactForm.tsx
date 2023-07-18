@@ -18,7 +18,7 @@ export const ContactForm = () => {
     return <p>{data.contactForm.thanks}</p>;
   }
   return (
-    <>
+    <div className='form-container'>
       <EmailTwoToneIcon fontSize='medium' className='icon' color="success" onClick={handleShowForm} />
       {showForm && <form className="form" onSubmit={handleSubmit}>
         <Typography>{data.contactForm.text}</Typography>
@@ -48,6 +48,6 @@ export const ContactForm = () => {
           {data.contactForm.close}
         </Button>
       </form>}
-    </>
+    </div>
   )
 }
