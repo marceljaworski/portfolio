@@ -25,7 +25,15 @@
     "pageProjects": {
         "project": "Projekte",
         "visit": "Besuchen",
-        "projects":[ 
+        "projects":[
+            { 
+            "description": "This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions.",
+            "title": "Vue.js Webseite",
+            "stack": ["Vue3(Vite)", "TypeScript", "CSS", "Router", "API data fetch"],
+            "features": "Ich richte eine Vue 3-Site mit TypeScript, Komponenten, Interaktion, Skript-Setup-Syntax, API-Datenabruf und Veröffentlichung in Vercel ein",
+            "link": "https://vue3-website.vercel.app/",
+            "date": "Juli 20, 2023"
+        },
             { 
                 "description": "Diese Anwendung nutzt künstliche Intelligenz von OpenAI, um interaktive und Echtzeit-Antworten auf Benutzerfragen bereitzustellen.",
                 "title": "ChatGPT Clone",

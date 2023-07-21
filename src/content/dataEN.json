@@ -27,6 +27,14 @@
         "projects":[ 
             { 
             "description": "This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions.",
+            "title": "Vue.js Website",
+            "stack": ["Vue3(Vite)", "TypeScript", "CSS", "Router", "API data fetch"],
+            "features": "Set up Vue 3 site with TypeScript, components, interaction, script setup syntax, API data fetch, and publish to Vercel",
+            "link": "https://vue3-website.vercel.app/",
+            "date": "July 20, 2023"
+        },
+            { 
+            "description": "This application uses OpenAI artificial intelligence to provide interactive and real-time answers to user questions.",
             "title": "ChatGPT Clone",
             "stack": ["React(Vite)", "Express.js", "Open_AI-Api"],
             "features": "I've implemented a responsive user interface that resembles the original ChatGPT. ",
