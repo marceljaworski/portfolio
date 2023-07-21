@@ -12,6 +12,7 @@ import tictactoe from '../images/tictactoe.png';
 import calculator from '../images/calculator.png';
 import jonglier from '../images/jonglier.png';
 import bootstrap from '../images/bootstrap.png';
+import vue from '../images/vue.png';
 
 
 interface project {
@@ -34,7 +35,7 @@ export const PageProjects = () => {
 			<Typography variant='h3' className='page-title'>{data.pageProjects.project}</Typography>
 			<div className='main-projects'>
 				<div className='card'>
-					<img className='card-image' src={gpt} alt="chat gpt" />
+					<img className='card-image' src={vue} alt="vue3" />
 					
 					<Typography variant='h4' component="div">{data.pageProjects.projects[0].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[0].features}</Typography>
@@ -48,7 +49,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[0].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={eventplanner} alt="" />
+					<img className='card-image' src={gpt} alt="chat gpt" />
 					
 					<Typography variant='h4' component="div">{data.pageProjects.projects[1].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[1].features}</Typography>
@@ -62,7 +63,8 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[1].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={glossary} alt="developer glossary" />
+					<img className='card-image' src={eventplanner} alt="" />
+					
 					<Typography variant='h4' component="div">{data.pageProjects.projects[2].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[2].features}</Typography>
 					<div className='tags'>
@@ -75,7 +77,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[2].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={angularshop} alt="online shop" />
+					<img className='card-image' src={glossary} alt="developer glossary" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[3].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[3].features}</Typography>
 					<div className='tags'>
@@ -88,7 +90,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[3].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={boredapp} alt="" />
+					<img className='card-image' src={angularshop} alt="online shop" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[4].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[4].features}</Typography>
 					<div className='tags'>
@@ -101,7 +103,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[4].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={stopwatch} alt="" />
+					<img className='card-image' src={boredapp} alt="" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[5].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[5].features}</Typography>
 					<div className='tags'>
@@ -114,7 +116,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[5].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={tictactoe} alt="" />
+					<img className='card-image' src={stopwatch} alt="" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[6].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[6].features}</Typography>
 					<div className='tags'>
@@ -127,7 +129,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[6].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={calculator} alt="calculator" />
+					<img className='card-image' src={tictactoe} alt="" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[7].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[7].features}</Typography>
 					<div className='tags'>
@@ -140,7 +142,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[7].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={jonglier} alt="" />
+					<img className='card-image' src={calculator} alt="calculator" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[8].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[8].features}</Typography>
 					<div className='tags'>
@@ -153,7 +155,7 @@ export const PageProjects = () => {
 					{/* <a href={data.pageProjects.projects[8].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 				<div className='card'>
-					<img className='card-image' src={bootstrap} alt="" />
+					<img className='card-image' src={jonglier} alt="" />
 					<Typography variant='h4' component="div">{data.pageProjects.projects[9].title}</Typography>
 					<Typography variant='body1'>{data.pageProjects.projects[9].features}</Typography>
 					<div className='tags'>
@@ -164,6 +166,19 @@ export const PageProjects = () => {
 						})}
 					</div>
 					{/* <a href={data.pageProjects.projects[9].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
+				</div>
+				<div className='card'>
+					<img className='card-image' src={bootstrap} alt="" />
+					<Typography variant='h4' component="div">{data.pageProjects.projects[10].title}</Typography>
+					<Typography variant='body1'>{data.pageProjects.projects[10].features}</Typography>
+					<div className='tags'>
+						{data.pageProjects.projects[10].stack.map((el: any) => {
+							return ( 
+								<a href={data.pageProjects.projects[10].link}>{el}</a>
+							);
+						})}
+					</div>
+					{/* <a href={data.pageProjects.projects[10].link} target="blank"><button>{data.pageProjects.visit}</button></a> */}
 				</div>
 			</div>
 		</div>
